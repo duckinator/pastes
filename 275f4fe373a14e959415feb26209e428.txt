@@ -1,0 +1,128 @@
+GameAction [AppID 4000, ActionID 2] : LaunchApp changed task to Starting with ""
+GameAction [AppID 4000, ActionID 2] : LaunchApp changed task to SynchronizingCloud with ""
+GameAction [AppID 4000, ActionID 2] : LaunchApp changed task to SiteLicenseSeatCheckout with ""
+GameAction [AppID 4000, ActionID 2] : LaunchApp changed task to CreatingProcess with ""
+GameAction [AppID 4000, ActionID 2] : LaunchApp waiting for user response to CreatingProcess ""
+GameAction[AppID 4000, ActionID 2] : LaunchApp continues with user response "CreatingProcess"
+Opted-in Controller Mask: 0
+Game update: AppID 4000 "Garry's Mod", ProcID 32209, IP 0.0.0.0:0
+>>> Adding process 32209 for game ID 4000
+GameAction [AppID 4000, ActionID 2] : LaunchApp changed task to WaitingGameWindow with ""
+ERROR: ld.so: object '/home/ellen/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/ellen/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+GameAction [AppID 4000, ActionID 2] : LaunchApp changed task to Completed with ""
+pid 32211 != 32210, skipping destruction (fork without exec?)
+ERROR: ld.so: object '/home/ellen/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/ellen/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS64): ignored.
+>>> Adding process 32210 for game ID 4000
+>>> Adding process 32212 for game ID 4000
+>>> Adding process 32213 for game ID 4000
+SDL video target is 'x11'
+SDL video target is 'x11'
+SDL failed to create GL compatibility profile (whichProfile=0)!
+Installing breakpad exception handler for appid(gameoverlayui)/version(20170717231013)
+Installing breakpad exception handler for appid(gameoverlayui)/version(1.0)
+Installing breakpad exception handler for appid(gameoverlayui)/version(1.0)
+Game update: AppID 4000 "Garry's Mod", ProcID 32213, IP 0.0.0.0:0
+Setting breakpad minidump AppID = 4000
+Steam_SetMinidumpSteamID:  Caching Steam ID:  76561198025336700 [API loaded no]
+Installing breakpad exception handler for appid(gameoverlayui)/version(1.0)
+Did not detect any valid joysticks.
+Could not load program cache file glbaseshaders.cfg
+Could not find base GL shader cache file
+Could not load program cache file glshaders.cfg
+Could not find user GL shader cache file
+Precache: Took 0 ms, Vertex 0, Pixel 0
+ConVarRef mat_dxlevel doesn't point to an existing ConVar
+Game.so loaded for "Garry's Mod"
+
+(Awesomium:32213): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+
+(Awesomium:32213): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+
+(Awesomium:32213): Gtk-WARNING **: Unable to locate theme engine in module_path: "murrine",
+
+(Awesomium:32213): Gtk-WARNING **: Unable to locate theme engine in module_path: "murrine",
+
+(Awesomium:32213): Gtk-WARNING **: Unable to locate theme engine in module_path: "murrine",
+
+(Awesomium:32213): Gtk-WARNING **: Unable to locate theme engine in module_path: "murrine",
+
+(Awesomium:32213): Gtk-WARNING **: Unable to locate theme engine in module_path: "murrine",
+
+(Awesomium:32213): Gtk-WARNING **: Unable to locate theme engine in module_path: "murrine",
+
+(Awesomium:32213): Gtk-WARNING **: Unable to locate theme engine in module_path: "murrine",
+
+(Awesomium:32213): Gtk-WARNING **: Unable to locate theme engine in module_path: "murrine",
+
+(Awesomium:32213): Gtk-WARNING **: Unable to locate theme engine in module_path: "murrine",
+
+(Awesomium:32213): Gtk-WARNING **: Unable to locate theme engine in module_path: "murrine",
+
+(Awesomium:32213): Gtk-WARNING **: Unable to locate theme engine in module_path: "murrine",
+ERROR: ld.so: object '/home/ellen/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS64): ignored.
+>>> Adding process 32230 for game ID 4000
+ERROR: ld.so: object '/home/ellen/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS64): ignored.
+>>> Adding process 32249 for game ID 4000
+Installing breakpad exception handler for appid(steam)/version(1500335472)
+Installing breakpad exception handler for appid(gameoverlayui)/version(1.0)
+This system supports the OpenGL extension GL_EXT_framebuffer_object.
+This system supports the OpenGL extension GL_EXT_framebuffer_blit.
+This system supports the OpenGL extension GL_EXT_framebuffer_multisample.
+This system DOES NOT support the OpenGL extension GL_APPLE_fence.
+This system DOES NOT support the OpenGL extension GL_NV_fence.
+This system supports the OpenGL extension GL_ARB_sync.
+This system supports the OpenGL extension GL_EXT_draw_buffers2.
+This system DOES NOT support the OpenGL extension GL_EXT_bindable_uniform.
+This system DOES NOT support the OpenGL extension GL_APPLE_flush_buffer_range.
+This system supports the OpenGL extension GL_ARB_map_buffer_range.
+This system supports the OpenGL extension GL_ARB_vertex_buffer_object.
+This system supports the OpenGL extension GL_ARB_occlusion_query.
+This system DOES NOT support the OpenGL extension GL_APPLE_texture_range.
+This system DOES NOT support the OpenGL extension GL_APPLE_client_storage.
+This system DOES NOT support the OpenGL extension GL_ARB_uniform_buffer.
+This system supports the OpenGL extension GL_ARB_vertex_array_bgra.
+This system supports the OpenGL extension GL_EXT_vertex_array_bgra.
+This system supports the OpenGL extension GL_ARB_framebuffer_object.
+This system DOES NOT support the OpenGL extension GL_GREMEDY_string_marker.
+This system supports the OpenGL extension GL_ARB_debug_output.
+This system DOES NOT support the OpenGL extension GL_EXT_direct_state_access.
+This system DOES NOT support the OpenGL extension GL_NV_bindless_texture.
+This system DOES NOT support the OpenGL extension GL_AMD_pinned_memory.
+This system supports the OpenGL extension GL_EXT_framebuffer_multisample_blit_scaled.
+This system supports the OpenGL extension GL_EXT_texture_sRGB_decode.
+This system DOES NOT support the OpenGL extension GL_NVX_gpu_memory_info.
+This system DOES NOT support the OpenGL extension GL_ATI_meminfo.
+This system supports the OpenGL extension GL_EXT_texture_compression_s3tc.
+This system supports the OpenGL extension GL_EXT_texture_compression_dxt1.
+This system supports the OpenGL extension GL_ANGLE_texture_compression_dxt3.
+This system supports the OpenGL extension GL_ANGLE_texture_compression_dxt5.
+This system DOES NOT support the OpenGL extension GLX_EXT_swap_control_tear.
+GL_NV_bindless_texture: DISABLED
+GL_AMD_pinned_memory: DISABLED
+GL_EXT_texture_sRGB_decode: AVAILABLE
+GL_NVX_gpu_memory_info: UNAVAILABLE
+GL_ATI_meminfo: UNAVAILABLE
+GL_MAX_SAMPLES_EXT: 16
+IDirect3DDevice9::Create: BackBufWidth: 1920, BackBufHeight: 1080, D3DFMT: 3, BackBufCount: 1, MultisampleType: 0, MultisampleQuality: 0
+GL sampler object usage: ENABLED
+GL prefer MapBufferRange: YES
+IDirect3DDevice9::CreatePixelShader: shaderapi's centroid mask (0x00000000) differs from mask derived from shader name (0x0000000C) for shader ps-file flashlight_ps20b ps-index 0 ps-combo 0
+IDirect3DDevice9::CreatePixelShader: shaderapi's centroid mask (0x00000000) differs from mask derived from shader name (0x0000000C) for shader ps-file flashlight_ps20b ps-index 0 ps-combo 1
+IDirect3DDevice9::CreatePixelShader: shaderapi's centroid mask (0x00000000) differs from mask derived from shader name (0x0000000C) for shader ps-file flashlight_ps20b ps-index 0 ps-combo 2
+IDirect3DDevice9::CreatePixelShader: shaderapi's centroid mask (0x00000000) differs from mask derived from shader name (0x0000000C) for shader ps-file flashlight_ps20b ps-index 0 ps-combo 3
+IDirect3DDevice9::CreatePixelShader: shaderapi's centroid mask (0x00000000) differs from mask derived from shader name (0x0000000C) for shader ps-file flashlight_ps20b ps-index 96 ps-combo 0
+IDirect3DDevice9::CreatePixelShader: shaderapi's centroid mask (0x00000000) differs from mask derived from shader name (0x0000000C) for shader ps-file flashlight_ps20b ps-index 96 ps-combo 1
+IDirect3DDevice9::CreatePixelShader: shaderapi's centroid mask (0x00000000) differs from mask derived from shader name (0x0000000C) for shader ps-file flashlight_ps20b ps-index 96 ps-combo 2
+IDirect3DDevice9::CreatePixelShader: shaderapi's centroid mask (0x00000000) differs from mawarning: Unknown nb_ctl request:  4
+warning: Unknown nb_ctl request:  4
+warning: Unknown nb_ctl request:  4
+warning: Unknown nb_ctl request:  4
+warning: Unknown nb_ctl request:  4
+warning: Unknown nb_ctl request:  4
+pid 32245 != 32230, skipping destruction (fork without exec?)
+pid 32254 != 32230, skipping destruction (fork without exec?)
+/home/ellen/.local/share/Steam/steamapps/common/GarrysMod/hl2.sh: line 67: 32213 Segmentation fault      (core dumped) ${GAME_DEBUGGER} "${GAMEROOT}"/${GAMEEXE} "$@"
+Game removed: AppID 4000 "Garry's Mod", ProcID 32213 
+No cached sticky mapping in ActivateActionSet.
