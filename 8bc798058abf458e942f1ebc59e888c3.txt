@@ -1,0 +1,70 @@
+* Rebuilt URL to: https://duckinator.tumblr.com/
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 66.6.32.21...
+* TCP_NODELAY set
+* Connected to duckinator.tumblr.com (66.6.32.21) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: none
+} [5 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server hello (2):
+{ [98 bytes data]
+* TLSv1.2 (IN), TLS handshake, Certificate (11):
+{ [3079 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+{ [333 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server finished (14):
+{ [4 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+} [70 bytes data]
+* TLSv1.2 (OUT), TLS change cipher, Client hello (1):
+} [1 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Finished (20):
+} [16 bytes data]
+* TLSv1.2 (IN), TLS handshake, Finished (20):
+{ [16 bytes data]
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: C=US; ST=CA; L=Sunnyvale; O=Yahoo! Inc.; CN=*.tumblr.com
+*  start date: May 22 00:00:00 2017 GMT
+*  expire date: Nov 22 12:00:00 2017 GMT
+*  subjectAltName: host "duckinator.tumblr.com" matched cert's "*.tumblr.com"
+*  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=DigiCert SHA2 High Assurance Server CA
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+} [5 bytes data]
+* Using Stream ID: 1 (easy handle 0x938cdcc1c0)
+} [5 bytes data]
+> GET / HTTP/2
+> Host: duckinator.tumblr.com
+> User-Agent: curl/7.55.1
+> Accept: */*
+> 
+{ [5 bytes data]
+* Connection state changed (MAX_CONCURRENT_STREAMS updated)!
+} [5 bytes data]
+< HTTP/2 302 
+< server: nginx
+< date: Sat, 26 Aug 2017 01:08:41 GMT
+< content-type: text/html; charset=UTF-8
+< set-cookie: tmgioct=59a0ca195f34c20909240530; expires=Tue, 24-Aug-2027 01:08:41 GMT; Max-Age=315360000; path=/; domain=.tumblr.com; HttpOnly
+< p3p: CP="Tumblr's privacy policy is available here: https://www.tumblr.com/policy/en/privacy"
+< x-frame-options: deny
+< x-xss-protection: 1; mode=block
+< x-content-type-options: nosniff
+< strict-transport-security: max-age=0
+< location: http://duckinator.tumblr.com/#_=_
+< x-ua-compatible: IE=Edge,chrome=1
+< 
+{ [0 bytes data]
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host duckinator.tumblr.com left intact
