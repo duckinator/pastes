@@ -1,0 +1,8 @@
+include config.mk
+include make/${TARGET}.mk
+
+config.mk:
+	$(error no config.mk)
+
+make/.mk:
+	$(error TARGET is undefined)
