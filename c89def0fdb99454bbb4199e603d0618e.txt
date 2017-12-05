@@ -1,0 +1,68 @@
+.
+├── assets
+│   └── isofs
+│       └── boot
+│           └── grub
+│               ├── menu.lst
+│               └── stage2_eltorito
+├── bin
+│   ├── generate_build_info.sh
+│   └── make
+├── CODE_OF_CONDUCT.md
+├── config.mk
+├── config.mk.dist
+├── Dockerfile
+├── .gitignore
+├── include
+│   ├── awoo
+│   │   ├── build_info.h
+│   │   └── tests.h
+│   ├── awoo.h
+│   ├── badmalloc.h
+│   ├── buildinfo.h
+│   ├── kernel.h
+│   ├── ktest.h
+│   ├── stddef.h
+│   ├── stdint.h
+│   └── string.h
+├── iso
+│   ├── bochsrc-i386.txt
+│   └── bx_enh_dbg.ini
+├── LICENSE.txt
+├── make
+│   ├── despair.mk
+│   ├── i386.mk
+│   └── x86_64.mk
+├── Makefile
+├── README.md
+├── src
+│   ├── bootstrap
+│   │   ├── i386
+│   │   │   ├── link.ld
+│   │   │   └── start.asm
+│   │   └── x86_64
+│   │       ├── link.ld
+│   │       └── start.asm
+│   ├── kernel
+│   │   ├── main.c
+│   │   └── main.h
+│   ├── libraries
+│   │   ├── badmalloc
+│   │   │   └── main.c
+│   │   ├── hal-i386
+│   │   │   ├── basic_display.c
+│   │   │   ├── basic_display.h
+│   │   │   ├── basic_uart.c
+│   │   │   ├── basic_uart.h
+│   │   │   ├── main.c
+│   │   │   ├── ports.c
+│   │   │   └── ports.h
+│   │   ├── ktest
+│   │   │   └── main.c
+│   │   └── libc
+│   │       └── string.c
+│   └── services
+│       └── .gitkeep
+└── .travis.yml
+
+20 directories, 45 files
