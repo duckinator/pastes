@@ -1,0 +1,575 @@
+Archive member included to satisfy reference by file (symbol)
+
+src/libraries/bootstrap-i386.a(start.o)
+                              (_start)
+src/libraries/awoostr.a(tests.o)
+                              src/kernel/main.o (add_awoostr_tests)
+src/libraries/awoostr.a(main.o)
+                              src/libraries/awoostr.a(tests.o) (_decimal_places_in_uint)
+src/libraries/ktest.a(main.o)
+                              src/libraries/awoostr.a(tests.o) (test_add)
+src/libraries/badmalloc.a(test.o)
+                              src/kernel/main.o (add_badmalloc_tests)
+src/libraries/badmalloc.a(main.o)
+                              src/libraries/awoostr.a(tests.o) (badmalloc)
+src/libraries/hal-i386.a(main.o)
+                              src/libraries/badmalloc.a(main.o) (hal_badmalloc_start_address)
+src/libraries/hal-i386.a(basic_display.o)
+                              src/libraries/hal-i386.a(main.o) (hal_basic_display_init)
+src/libraries/hal-i386.a(basic_uart.o)
+                              src/libraries/hal-i386.a(main.o) (hal_basic_uart_init)
+src/libraries/hal-i386.a(tests.o)
+                              src/kernel/main.o (add_hal_tests)
+src/libraries/hal-i386.a(ports.o)
+                              src/libraries/hal-i386.a(main.o) (hal_inb)
+src/libraries/libpanic.a(main.o)
+                              src/kernel/main.o (_panic)
+src/libraries/libpanic-i386.a(main.o)
+                              src/libraries/libpanic.a(main.o) (stack_dump)
+src/libraries/libc.a(string.o)
+                              src/libraries/awoostr.a(tests.o) (memset)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000100000                . = 0x100000
+                0x0000000000100000                kernel_start = .
+
+.debug_info     0x0000000000100000     0x17bb
+                0x0000000000100000                kernel_debug_info_start = .
+ *(.debug_info)
+ .debug_info    0x0000000000100000       0x3a src/kernel/main.o
+ .debug_info    0x000000000010003a      0x67c src/libraries/awoostr.a(tests.o)
+ .debug_info    0x00000000001006b6      0x281 src/libraries/awoostr.a(main.o)
+ .debug_info    0x0000000000100937      0x292 src/libraries/ktest.a(main.o)
+ .debug_info    0x0000000000100bc9      0x186 src/libraries/badmalloc.a(test.o)
+ .debug_info    0x0000000000100d4f       0x89 src/libraries/badmalloc.a(main.o)
+ .debug_info    0x0000000000100dd8      0x156 src/libraries/hal-i386.a(main.o)
+ .debug_info    0x0000000000100f2e      0x1ef src/libraries/hal-i386.a(basic_display.o)
+ .debug_info    0x000000000010111d       0xeb src/libraries/hal-i386.a(basic_uart.o)
+ .debug_info    0x0000000000101208      0x149 src/libraries/hal-i386.a(tests.o)
+ .debug_info    0x0000000000101351       0xe4 src/libraries/hal-i386.a(ports.o)
+ .debug_info    0x0000000000101435      0x10f src/libraries/libpanic.a(main.o)
+ .debug_info    0x0000000000101544      0x277 src/libraries/libc.a(string.o)
+                0x00000000001017bb                kernel_debug_info_end = .
+
+.text           0x0000000000100000     0x4bb2
+                0x0000000000100000                kernel_code_start = .
+ *(.mboot)
+ *(.text)
+ .text          0x0000000000100000      0x113 src/kernel/main.o
+                0x0000000000100000                kernel_main
+ *fill*         0x0000000000100113        0xd 
+ .text          0x0000000000100120       0x24 src/libraries/bootstrap-i386.a(start.o)
+                0x000000000010012c                _start
+ *fill*         0x0000000000100144        0xc 
+ .text          0x0000000000100150     0x2b06 src/libraries/awoostr.a(tests.o)
+                0x0000000000100150                test_awoostr_assertions
+                0x0000000000102c20                add_awoostr_tests
+ *fill*         0x0000000000102c56        0xa 
+ .text          0x0000000000102c60      0x4c4 src/libraries/awoostr.a(main.o)
+                0x0000000000102c60                uint64_div
+                0x0000000000102d40                uint64_mod
+                0x0000000000102db0                _decimal_places_in_uint
+                0x0000000000102e60                uint8_to_char
+                0x0000000000102ed0                uint64_to_str_radix
+                0x0000000000103010                uint64_to_str
+                0x0000000000103060                int64_to_str_radix
+                0x00000000001030e0                int64_to_str
+ *fill*         0x0000000000103124        0xc 
+ .text          0x0000000000103130      0x58c src/libraries/ktest.a(main.o)
+                0x0000000000103130                test_add
+                0x0000000000103290                test_run
+                0x0000000000103450                test_run_all
+ *fill*         0x00000000001036bc        0x4 
+ .text          0x00000000001036c0      0x2b6 src/libraries/badmalloc.a(test.o)
+                0x00000000001036c0                test_badmalloc_initializes_buffer
+                0x0000000000103940                add_badmalloc_tests
+ *fill*         0x0000000000103976        0xa 
+ .text          0x0000000000103980       0xa4 src/libraries/badmalloc.a(main.o)
+                0x0000000000103980                badmalloc_init
+                0x00000000001039b0                badmalloc
+ *fill*         0x0000000000103a24        0xc 
+ .text          0x0000000000103a30      0x277 src/libraries/hal-i386.a(main.o)
+                0x0000000000103a30                hal_badmalloc_start_address
+                0x0000000000103a50                hal_get_magic
+                0x0000000000103a70                hal_store_magic
+                0x0000000000103ab0                hal_init
+                0x0000000000103ae0                hal_shutdown
+                0x0000000000103b20                kprint
+                0x0000000000103b60                hal_disable_interrupts
+                0x0000000000103b70                hal_hard_shutdown
+                0x0000000000103c60                hal_test_fail_shutdown
+ *fill*         0x0000000000103ca7        0x9 
+ .text          0x0000000000103cb0      0x39e src/libraries/hal-i386.a(basic_display.o)
+                0x0000000000103cb0                hal_basic_display_move_cursor
+                0x0000000000103d90                hal_basic_display_print
+                0x0000000000103f40                hal_basic_display_clear
+                0x0000000000104030                hal_basic_display_init
+ *fill*         0x000000000010404e        0x2 
+ .text          0x0000000000104050      0x261 src/libraries/hal-i386.a(basic_uart.o)
+                0x0000000000104050                hal_basic_uart_init
+                0x00000000001041c0                hal_basic_uart_transmit_empty
+                0x0000000000104200                hal_basic_uart_print_character
+                0x0000000000104260                hal_basic_uart_print
+ *fill*         0x00000000001042b1        0xf 
+ .text          0x00000000001042c0      0x296 src/libraries/hal-i386.a(tests.o)
+                0x00000000001042c0                test_hal_assertions
+                0x0000000000104520                add_hal_tests
+ *fill*         0x0000000000104556        0xa 
+ .text          0x0000000000104560       0x6f src/libraries/hal-i386.a(ports.o)
+                0x0000000000104560                hal_outb
+                0x0000000000104590                hal_inb
+                0x00000000001045b0                hal_inw
+ *fill*         0x00000000001045cf        0x1 
+ .text          0x00000000001045d0      0x28f src/libraries/libpanic.a(main.o)
+                0x00000000001045d0                panic_stack_dump_hex
+                0x00000000001046d0                _panic
+ *fill*         0x000000000010485f        0x1 
+ .text          0x0000000000104860        0xa src/libraries/libpanic-i386.a(main.o)
+                0x0000000000104860                stack_dump
+ *fill*         0x000000000010486a        0x6 
+ .text          0x0000000000104870      0x342 src/libraries/libc.a(string.o)
+                0x0000000000104870                memset
+                0x00000000001048d0                strcpy
+                0x0000000000104940                strlen
+                0x0000000000104990                strcmp
+                0x0000000000104a20                strncmp
+                0x0000000000104b20                strrev
+                0x0000000000104bb2                kernel_code_end = .
+
+.iplt           0x0000000000104bb8        0x0
+ .iplt          0x0000000000104bb8        0x0 src/kernel/main.o
+
+.rodata         0x0000000000105000        0x0
+                0x0000000000105000                kernel_rodata_start = .
+ *(.rodata)
+                0x0000000000105000                kernel_rodata_end = .
+
+.rodata.str1.1  0x0000000000104bb2      0x630
+ .rodata.str1.1
+                0x0000000000104bb2       0x8e src/kernel/main.o
+ .rodata.str1.1
+                0x0000000000104c40      0x34f src/libraries/awoostr.a(tests.o)
+                                        0x357 (size before relaxing)
+ .rodata.str1.1
+                0x0000000000104f8f       0xad src/libraries/ktest.a(main.o)
+                                         0xbb (size before relaxing)
+ .rodata.str1.1
+                0x000000000010503c       0xad src/libraries/badmalloc.a(test.o)
+ .rodata.str1.1
+                0x00000000001050e9       0x47 src/libraries/hal-i386.a(main.o)
+                                         0x4a (size before relaxing)
+ .rodata.str1.1
+                0x0000000000105130       0x51 src/libraries/hal-i386.a(tests.o)
+                                         0x6a (size before relaxing)
+ .rodata.str1.1
+                0x0000000000105181       0x61 src/libraries/libpanic.a(main.o)
+                                         0x6d (size before relaxing)
+
+.rel.dyn        0x00000000001051e4        0x0
+ .rel.got       0x00000000001051e4        0x0 src/kernel/main.o
+ .rel.iplt      0x00000000001051e4        0x0 src/kernel/main.o
+
+.data           0x0000000000106000       0x20
+                0x0000000000106000                kernel_data_start = .
+ *(.data)
+ .data          0x0000000000106000       0x10 src/libraries/ktest.a(main.o)
+ .data          0x0000000000106010        0xd src/libraries/hal-i386.a(basic_display.o)
+                0x0000000000106010                VIDEO_RAM
+ *fill*         0x000000000010601d        0x1 
+ .data          0x000000000010601e        0x2 src/libraries/hal-i386.a(basic_uart.o)
+                0x0000000000106020                kernel_data_end = .
+
+.got            0x0000000000106020        0x4
+ .got           0x0000000000106020        0x4 src/kernel/main.o
+
+.got.plt        0x0000000000106024        0xc
+ .got.plt       0x0000000000106024        0xc src/kernel/main.o
+                0x0000000000106024                _GLOBAL_OFFSET_TABLE_
+
+.igot.plt       0x0000000000106030        0x0
+ .igot.plt      0x0000000000106030        0x0 src/kernel/main.o
+
+.bss            0x0000000000107000     0x401d
+                0x0000000000107000                kernel_bss_start = .
+ *(COMMON)
+ *(.bss)
+ .bss           0x0000000000107000     0x4000 src/libraries/bootstrap-i386.a(start.o)
+                0x0000000000107000                stack_bottom
+                0x000000000010b000                stack_top
+ .bss           0x000000000010b000        0x8 src/libraries/ktest.a(main.o)
+ .bss           0x000000000010b008        0x4 src/libraries/badmalloc.a(main.o)
+ .bss           0x000000000010b00c        0x8 src/libraries/hal-i386.a(main.o)
+ .bss           0x000000000010b014        0x6 src/libraries/hal-i386.a(basic_display.o)
+ .bss           0x000000000010b01a        0x2 src/libraries/hal-i386.a(basic_uart.o)
+ .bss           0x000000000010b01c        0x1 src/libraries/libpanic.a(main.o)
+                0x000000000010b01d                kernel_bss_end = .
+                0x000000000010b01d                kernel_end = .
+LOAD src/kernel/main.o
+LOAD src/libraries/bootstrap-i386.a
+LOAD src/libraries/awoostr.a
+LOAD src/libraries/ktest.a
+LOAD src/libraries/badmalloc.a
+LOAD src/libraries/hal-i386.a
+LOAD src/libraries/libpanic.a
+LOAD src/libraries/libpanic-i386.a
+LOAD src/libraries/libc.a
+OUTPUT(src/kernel.exe elf32-i386)
+
+.debug_str      0x0000000000000000      0x75b
+ .debug_str     0x0000000000000000       0x70 src/kernel/main.o
+ .debug_str     0x0000000000000070       0x9f src/libraries/awoostr.a(tests.o)
+                                        0x114 (size before relaxing)
+ .debug_str     0x000000000000010f       0xe9 src/libraries/awoostr.a(main.o)
+                                        0x194 (size before relaxing)
+ .debug_str     0x00000000000001f8       0xcd src/libraries/ktest.a(main.o)
+                                        0x1bc (size before relaxing)
+ .debug_str     0x00000000000002c5       0x57 src/libraries/badmalloc.a(test.o)
+                                        0x131 (size before relaxing)
+ .debug_str     0x000000000000031c       0x38 src/libraries/badmalloc.a(main.o)
+                                         0xa7 (size before relaxing)
+ .debug_str     0x0000000000000354       0xd5 src/libraries/hal-i386.a(main.o)
+                                        0x146 (size before relaxing)
+ .debug_str     0x0000000000000429      0x13a src/libraries/hal-i386.a(basic_display.o)
+                                        0x1b9 (size before relaxing)
+ .debug_str     0x0000000000000563       0xa5 src/libraries/hal-i386.a(basic_uart.o)
+                                        0x133 (size before relaxing)
+ .debug_str     0x0000000000000608       0x41 src/libraries/hal-i386.a(tests.o)
+                                         0xf7 (size before relaxing)
+ .debug_str     0x0000000000000649       0x3d src/libraries/hal-i386.a(ports.o)
+                                         0xc3 (size before relaxing)
+ .debug_str     0x0000000000000686       0x5d src/libraries/libpanic.a(main.o)
+                                        0x10f (size before relaxing)
+ .debug_str     0x00000000000006e3       0x78 src/libraries/libc.a(string.o)
+                                        0x106 (size before relaxing)
+
+.debug_abbrev   0x0000000000000000      0x797
+ .debug_abbrev  0x0000000000000000       0x2a src/kernel/main.o
+ .debug_abbrev  0x000000000000002a       0x9c src/libraries/awoostr.a(tests.o)
+ .debug_abbrev  0x00000000000000c6       0x74 src/libraries/awoostr.a(main.o)
+ .debug_abbrev  0x000000000000013a       0xeb src/libraries/ktest.a(main.o)
+ .debug_abbrev  0x0000000000000225       0x9c src/libraries/badmalloc.a(test.o)
+ .debug_abbrev  0x00000000000002c1       0x83 src/libraries/badmalloc.a(main.o)
+ .debug_abbrev  0x0000000000000344       0x9d src/libraries/hal-i386.a(main.o)
+ .debug_abbrev  0x00000000000003e1       0xe9 src/libraries/hal-i386.a(basic_display.o)
+ .debug_abbrev  0x00000000000004ca       0x98 src/libraries/hal-i386.a(basic_uart.o)
+ .debug_abbrev  0x0000000000000562       0x9c src/libraries/hal-i386.a(tests.o)
+ .debug_abbrev  0x00000000000005fe       0x79 src/libraries/hal-i386.a(ports.o)
+ .debug_abbrev  0x0000000000000677       0xa0 src/libraries/libpanic.a(main.o)
+ .debug_abbrev  0x0000000000000717       0x80 src/libraries/libc.a(string.o)
+
+.debug_ranges   0x0000000000000000        0x0
+ .debug_ranges  0x0000000000000000        0x0 src/kernel/main.o
+ .debug_ranges  0x0000000000000000        0x0 src/libraries/awoostr.a(tests.o)
+ .debug_ranges  0x0000000000000000        0x0 src/libraries/awoostr.a(main.o)
+ .debug_ranges  0x0000000000000000        0x0 src/libraries/ktest.a(main.o)
+ .debug_ranges  0x0000000000000000        0x0 src/libraries/badmalloc.a(test.o)
+ .debug_ranges  0x0000000000000000        0x0 src/libraries/badmalloc.a(main.o)
+ .debug_ranges  0x0000000000000000        0x0 src/libraries/hal-i386.a(main.o)
+ .debug_ranges  0x0000000000000000        0x0 src/libraries/hal-i386.a(basic_display.o)
+ .debug_ranges  0x0000000000000000        0x0 src/libraries/hal-i386.a(basic_uart.o)
+ .debug_ranges  0x0000000000000000        0x0 src/libraries/hal-i386.a(tests.o)
+ .debug_ranges  0x0000000000000000        0x0 src/libraries/hal-i386.a(ports.o)
+ .debug_ranges  0x0000000000000000        0x0 src/libraries/libpanic.a(main.o)
+ .debug_ranges  0x0000000000000000        0x0 src/libraries/libc.a(string.o)
+
+.debug_macinfo  0x0000000000000000        0xd
+ .debug_macinfo
+                0x0000000000000000        0x1 src/kernel/main.o
+ .debug_macinfo
+                0x0000000000000001        0x1 src/libraries/awoostr.a(tests.o)
+ .debug_macinfo
+                0x0000000000000002        0x1 src/libraries/awoostr.a(main.o)
+ .debug_macinfo
+                0x0000000000000003        0x1 src/libraries/ktest.a(main.o)
+ .debug_macinfo
+                0x0000000000000004        0x1 src/libraries/badmalloc.a(test.o)
+ .debug_macinfo
+                0x0000000000000005        0x1 src/libraries/badmalloc.a(main.o)
+ .debug_macinfo
+                0x0000000000000006        0x1 src/libraries/hal-i386.a(main.o)
+ .debug_macinfo
+                0x0000000000000007        0x1 src/libraries/hal-i386.a(basic_display.o)
+ .debug_macinfo
+                0x0000000000000008        0x1 src/libraries/hal-i386.a(basic_uart.o)
+ .debug_macinfo
+                0x0000000000000009        0x1 src/libraries/hal-i386.a(tests.o)
+ .debug_macinfo
+                0x000000000000000a        0x1 src/libraries/hal-i386.a(ports.o)
+ .debug_macinfo
+                0x000000000000000b        0x1 src/libraries/libpanic.a(main.o)
+ .debug_macinfo
+                0x000000000000000c        0x1 src/libraries/libc.a(string.o)
+
+.debug_pubnames
+                0x0000000000000000      0x5ba
+ .debug_pubnames
+                0x0000000000000000       0x22 src/kernel/main.o
+ .debug_pubnames
+                0x0000000000000022       0x44 src/libraries/awoostr.a(tests.o)
+ .debug_pubnames
+                0x0000000000000066       0xb0 src/libraries/awoostr.a(main.o)
+ .debug_pubnames
+                0x0000000000000116       0x73 src/libraries/ktest.a(main.o)
+ .debug_pubnames
+                0x0000000000000189       0x50 src/libraries/badmalloc.a(test.o)
+ .debug_pubnames
+                0x00000000000001d9       0x3b src/libraries/badmalloc.a(main.o)
+ .debug_pubnames
+                0x0000000000000214       0xdf src/libraries/hal-i386.a(main.o)
+ .debug_pubnames
+                0x00000000000002f3      0x111 src/libraries/hal-i386.a(basic_display.o)
+ .debug_pubnames
+                0x0000000000000404       0xab src/libraries/hal-i386.a(basic_uart.o)
+ .debug_pubnames
+                0x00000000000004af       0x3c src/libraries/hal-i386.a(tests.o)
+ .debug_pubnames
+                0x00000000000004eb       0x37 src/libraries/hal-i386.a(ports.o)
+ .debug_pubnames
+                0x0000000000000522       0x43 src/libraries/libpanic.a(main.o)
+ .debug_pubnames
+                0x0000000000000565       0x55 src/libraries/libc.a(string.o)
+
+.debug_pubtypes
+                0x0000000000000000      0x4b3
+ .debug_pubtypes
+                0x0000000000000000       0x12 src/kernel/main.o
+ .debug_pubtypes
+                0x0000000000000012       0x6c src/libraries/awoostr.a(tests.o)
+ .debug_pubtypes
+                0x000000000000007e       0xa5 src/libraries/awoostr.a(main.o)
+ .debug_pubtypes
+                0x0000000000000123       0xba src/libraries/ktest.a(main.o)
+ .debug_pubtypes
+                0x00000000000001dd       0x6c src/libraries/badmalloc.a(test.o)
+ .debug_pubtypes
+                0x0000000000000249       0x2e src/libraries/badmalloc.a(main.o)
+ .debug_pubtypes
+                0x0000000000000277       0x44 src/libraries/hal-i386.a(main.o)
+ .debug_pubtypes
+                0x00000000000002bb       0x59 src/libraries/hal-i386.a(basic_display.o)
+ .debug_pubtypes
+                0x0000000000000314       0x59 src/libraries/hal-i386.a(basic_uart.o)
+ .debug_pubtypes
+                0x000000000000036d       0x4e src/libraries/hal-i386.a(tests.o)
+ .debug_pubtypes
+                0x00000000000003bb       0x50 src/libraries/hal-i386.a(ports.o)
+ .debug_pubtypes
+                0x000000000000040b       0x69 src/libraries/libpanic.a(main.o)
+ .debug_pubtypes
+                0x0000000000000474       0x3f src/libraries/libc.a(string.o)
+
+.comment        0x0000000000000000       0x2d
+ .comment       0x0000000000000000       0x2d src/kernel/main.o
+                                         0x2e (size before relaxing)
+ .comment       0x000000000000002d       0x2e src/libraries/awoostr.a(tests.o)
+ .comment       0x000000000000002d       0x2e src/libraries/awoostr.a(main.o)
+ .comment       0x000000000000002d       0x2e src/libraries/ktest.a(main.o)
+ .comment       0x000000000000002d       0x2e src/libraries/badmalloc.a(test.o)
+ .comment       0x000000000000002d       0x2e src/libraries/badmalloc.a(main.o)
+ .comment       0x000000000000002d       0x2e src/libraries/hal-i386.a(main.o)
+ .comment       0x000000000000002d       0x2e src/libraries/hal-i386.a(basic_display.o)
+ .comment       0x000000000000002d       0x2e src/libraries/hal-i386.a(basic_uart.o)
+ .comment       0x000000000000002d       0x2e src/libraries/hal-i386.a(tests.o)
+ .comment       0x000000000000002d       0x2e src/libraries/hal-i386.a(ports.o)
+ .comment       0x000000000000002d       0x2e src/libraries/libpanic.a(main.o)
+ .comment       0x000000000000002d       0x2e src/libraries/libc.a(string.o)
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/kernel/main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/libraries/awoostr.a(tests.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/libraries/awoostr.a(main.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/libraries/ktest.a(main.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/libraries/badmalloc.a(test.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/libraries/badmalloc.a(main.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/libraries/hal-i386.a(main.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/libraries/hal-i386.a(basic_display.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/libraries/hal-i386.a(basic_uart.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/libraries/hal-i386.a(tests.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/libraries/hal-i386.a(ports.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/libraries/libpanic.a(main.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/libraries/libc.a(string.o)
+
+.debug_frame    0x0000000000000000      0x668
+ .debug_frame   0x0000000000000000       0x34 src/kernel/main.o
+ .debug_frame   0x0000000000000034       0x4c src/libraries/awoostr.a(tests.o)
+ .debug_frame   0x0000000000000080      0x108 src/libraries/awoostr.a(main.o)
+ .debug_frame   0x0000000000000188       0x70 src/libraries/ktest.a(main.o)
+ .debug_frame   0x00000000000001f8       0x4c src/libraries/badmalloc.a(test.o)
+ .debug_frame   0x0000000000000244       0x50 src/libraries/badmalloc.a(main.o)
+ .debug_frame   0x0000000000000294      0x104 src/libraries/hal-i386.a(main.o)
+ .debug_frame   0x0000000000000398       0x90 src/libraries/hal-i386.a(basic_display.o)
+ .debug_frame   0x0000000000000428       0x88 src/libraries/hal-i386.a(basic_uart.o)
+ .debug_frame   0x00000000000004b0       0x4c src/libraries/hal-i386.a(tests.o)
+ .debug_frame   0x00000000000004fc       0x60 src/libraries/hal-i386.a(ports.o)
+ .debug_frame   0x000000000000055c       0x50 src/libraries/libpanic.a(main.o)
+ .debug_frame   0x00000000000005ac       0xbc src/libraries/libc.a(string.o)
+
+.debug_line     0x0000000000000000     0x1293
+ .debug_line    0x0000000000000000       0x67 src/kernel/main.o
+ .debug_line    0x0000000000000067      0x2c6 src/libraries/awoostr.a(tests.o)
+ .debug_line    0x000000000000032d      0x23c src/libraries/awoostr.a(main.o)
+ .debug_line    0x0000000000000569      0x292 src/libraries/ktest.a(main.o)
+ .debug_line    0x00000000000007fb       0xd4 src/libraries/badmalloc.a(test.o)
+ .debug_line    0x00000000000008cf       0x98 src/libraries/badmalloc.a(main.o)
+ .debug_line    0x0000000000000967      0x133 src/libraries/hal-i386.a(main.o)
+ .debug_line    0x0000000000000a9a      0x1fe src/libraries/hal-i386.a(basic_display.o)
+ .debug_line    0x0000000000000c98      0x13d src/libraries/hal-i386.a(basic_uart.o)
+ .debug_line    0x0000000000000dd5       0x9f src/libraries/hal-i386.a(tests.o)
+ .debug_line    0x0000000000000e74       0x8a src/libraries/hal-i386.a(ports.o)
+ .debug_line    0x0000000000000efe      0x11f src/libraries/libpanic.a(main.o)
+ .debug_line    0x000000000000101d      0x276 src/libraries/libc.a(string.o)
+
+.debug_loc      0x0000000000000000       0x21
+ .debug_loc     0x0000000000000000       0x21 src/libraries/hal-i386.a(basic_display.o)
+
+Cross Reference Table
+
+Symbol                                            File
+VIDEO_RAM                                         src/libraries/hal-i386.a(basic_display.o)
+_GLOBAL_OFFSET_TABLE_                             src/kernel/main.o
+                                                  src/libraries/libc.a(string.o)
+                                                  src/libraries/libpanic.a(main.o)
+                                                  src/libraries/hal-i386.a(tests.o)
+                                                  src/libraries/hal-i386.a(basic_uart.o)
+                                                  src/libraries/hal-i386.a(basic_display.o)
+                                                  src/libraries/hal-i386.a(main.o)
+                                                  src/libraries/badmalloc.a(main.o)
+                                                  src/libraries/badmalloc.a(test.o)
+                                                  src/libraries/ktest.a(main.o)
+                                                  src/libraries/awoostr.a(main.o)
+                                                  src/libraries/awoostr.a(tests.o)
+_decimal_places_in_uint                           src/libraries/awoostr.a(main.o)
+                                                  src/libraries/awoostr.a(tests.o)
+_panic                                            src/libraries/libpanic.a(main.o)
+                                                  src/kernel/main.o
+_start                                            src/libraries/bootstrap-i386.a(start.o)
+add_awoostr_tests                                 src/libraries/awoostr.a(tests.o)
+                                                  src/kernel/main.o
+add_badmalloc_tests                               src/libraries/badmalloc.a(test.o)
+                                                  src/kernel/main.o
+add_hal_tests                                     src/libraries/hal-i386.a(tests.o)
+                                                  src/kernel/main.o
+badmalloc                                         src/libraries/badmalloc.a(main.o)
+                                                  src/libraries/hal-i386.a(tests.o)
+                                                  src/libraries/badmalloc.a(test.o)
+                                                  src/libraries/ktest.a(main.o)
+                                                  src/libraries/awoostr.a(main.o)
+                                                  src/libraries/awoostr.a(tests.o)
+badmalloc_init                                    src/libraries/badmalloc.a(main.o)
+                                                  src/kernel/main.o
+hal_badmalloc_start_address                       src/libraries/hal-i386.a(main.o)
+                                                  src/libraries/badmalloc.a(main.o)
+hal_basic_display_clear                           src/libraries/hal-i386.a(basic_display.o)
+hal_basic_display_init                            src/libraries/hal-i386.a(basic_display.o)
+                                                  src/libraries/hal-i386.a(main.o)
+hal_basic_display_move_cursor                     src/libraries/hal-i386.a(basic_display.o)
+hal_basic_display_print                           src/libraries/hal-i386.a(basic_display.o)
+                                                  src/libraries/hal-i386.a(main.o)
+hal_basic_uart_init                               src/libraries/hal-i386.a(basic_uart.o)
+                                                  src/libraries/hal-i386.a(main.o)
+hal_basic_uart_print                              src/libraries/hal-i386.a(basic_uart.o)
+                                                  src/libraries/hal-i386.a(main.o)
+hal_basic_uart_print_character                    src/libraries/hal-i386.a(basic_uart.o)
+hal_basic_uart_transmit_empty                     src/libraries/hal-i386.a(basic_uart.o)
+hal_disable_interrupts                            src/libraries/hal-i386.a(main.o)
+hal_get_magic                                     src/libraries/hal-i386.a(main.o)
+                                                  src/libraries/hal-i386.a(tests.o)
+hal_hard_shutdown                                 src/libraries/hal-i386.a(main.o)
+hal_inb                                           src/libraries/hal-i386.a(ports.o)
+                                                  src/libraries/hal-i386.a(basic_uart.o)
+                                                  src/libraries/hal-i386.a(main.o)
+hal_init                                          src/libraries/hal-i386.a(main.o)
+                                                  src/libraries/libpanic.a(main.o)
+                                                  src/kernel/main.o
+hal_inw                                           src/libraries/hal-i386.a(ports.o)
+hal_outb                                          src/libraries/hal-i386.a(ports.o)
+                                                  src/libraries/hal-i386.a(basic_uart.o)
+                                                  src/libraries/hal-i386.a(basic_display.o)
+                                                  src/libraries/hal-i386.a(main.o)
+hal_shutdown                                      src/libraries/hal-i386.a(main.o)
+hal_store_magic                                   src/libraries/hal-i386.a(main.o)
+                                                  src/libraries/bootstrap-i386.a(start.o)
+hal_test_fail_shutdown                            src/libraries/hal-i386.a(main.o)
+                                                  src/kernel/main.o
+int64_to_str                                      src/libraries/awoostr.a(main.o)
+                                                  src/libraries/ktest.a(main.o)
+                                                  src/libraries/awoostr.a(tests.o)
+int64_to_str_radix                                src/libraries/awoostr.a(main.o)
+                                                  src/libraries/awoostr.a(tests.o)
+kernel_end                                        src/libraries/hal-i386.a(main.o)
+kernel_main                                       src/kernel/main.o
+                                                  src/libraries/bootstrap-i386.a(start.o)
+kprint                                            src/libraries/hal-i386.a(main.o)
+                                                  src/libraries/libpanic.a(main.o)
+                                                  src/libraries/hal-i386.a(tests.o)
+                                                  src/libraries/ktest.a(main.o)
+                                                  src/libraries/awoostr.a(tests.o)
+                                                  src/kernel/main.o
+memset                                            src/libraries/libc.a(string.o)
+                                                  src/libraries/hal-i386.a(tests.o)
+                                                  src/libraries/badmalloc.a(main.o)
+                                                  src/libraries/badmalloc.a(test.o)
+                                                  src/libraries/ktest.a(main.o)
+                                                  src/libraries/awoostr.a(main.o)
+                                                  src/libraries/awoostr.a(tests.o)
+panic_stack_dump_hex                              src/libraries/libpanic.a(main.o)
+                                                  src/libraries/libpanic-i386.a(main.o)
+stack_bottom                                      src/libraries/bootstrap-i386.a(start.o)
+stack_dump                                        src/libraries/libpanic-i386.a(main.o)
+                                                  src/libraries/libpanic.a(main.o)
+stack_top                                         src/libraries/bootstrap-i386.a(start.o)
+strcmp                                            src/libraries/libc.a(string.o)
+                                                  src/libraries/awoostr.a(tests.o)
+strcpy                                            src/libraries/libc.a(string.o)
+                                                  src/libraries/hal-i386.a(tests.o)
+                                                  src/libraries/badmalloc.a(test.o)
+                                                  src/libraries/ktest.a(main.o)
+                                                  src/libraries/awoostr.a(tests.o)
+strlen                                            src/libraries/libc.a(string.o)
+                                                  src/libraries/hal-i386.a(tests.o)
+                                                  src/libraries/badmalloc.a(test.o)
+                                                  src/libraries/ktest.a(main.o)
+                                                  src/libraries/awoostr.a(tests.o)
+strncmp                                           src/libraries/libc.a(string.o)
+strrev                                            src/libraries/libc.a(string.o)
+                                                  src/libraries/awoostr.a(main.o)
+test_add                                          src/libraries/ktest.a(main.o)
+                                                  src/libraries/hal-i386.a(tests.o)
+                                                  src/libraries/badmalloc.a(test.o)
+                                                  src/libraries/awoostr.a(tests.o)
+test_awoostr_assertions                           src/libraries/awoostr.a(tests.o)
+test_badmalloc_initializes_buffer                 src/libraries/badmalloc.a(test.o)
+test_hal_assertions                               src/libraries/hal-i386.a(tests.o)
+test_run                                          src/libraries/ktest.a(main.o)
+test_run_all                                      src/libraries/ktest.a(main.o)
+                                                  src/kernel/main.o
+uint64_div                                        src/libraries/awoostr.a(main.o)
+                                                  src/libraries/awoostr.a(tests.o)
+uint64_mod                                        src/libraries/awoostr.a(main.o)
+                                                  src/libraries/awoostr.a(tests.o)
+uint64_to_str                                     src/libraries/awoostr.a(main.o)
+                                                  src/libraries/libpanic.a(main.o)
+                                                  src/libraries/ktest.a(main.o)
+uint64_to_str_radix                               src/libraries/awoostr.a(main.o)
+                                                  src/libraries/libpanic.a(main.o)
+uint8_to_char                                     src/libraries/awoostr.a(main.o)
