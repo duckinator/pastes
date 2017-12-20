@@ -1,0 +1,43 @@
+From 0c3d35e274d4d12f86318b9ed51f0724cec9c91c Mon Sep 17 00:00:00 2001
+From: Ellen Marie Dash <me@duckie.co>
+Date: Wed, 20 Dec 2017 02:43:39 -0500
+Subject: [PATCH] Update Rakefile to allow minitest 4.x-5.x.
+
+---
+ Rakefile | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/Rakefile b/Rakefile
+index 67e4c25d..9eb71080 100644
+--- a/Rakefile
++++ b/Rakefile
+@@ -68,7 +68,7 @@ hoe = Hoe.spec 'rubygems-update' do
+   dependency 'rdoc',          '~> 4.0',   :dev
+   dependency 'ZenTest',       '~> 4.5',   :dev
+   dependency 'rake',          '~> 10.5',  :dev
+-  dependency 'minitest',      '~> 4.0',   :dev
++  dependency 'minitest',      ['>= 4.0', '< 6.0'],   :dev
+ 
+   self.extra_rdoc_files = Dir["*.rdoc"] + %w[
+     CVE-2013-4287.txt
+@@ -101,7 +101,7 @@ v = hoe.version
+ 
+ hoe.testlib      = :minitest
+ hoe.test_prelude = <<-RUBY.gsub("\n", ";")
+-  gem "minitest", "~> 4.0"
++  gem "minitest", [">= 4.0", "< 6.0"]
+   $:.unshift #{File.expand_path("../bundler/lib", __FILE__).dump}
+ RUBY
+ 
+@@ -145,7 +145,7 @@ task(:newb).prerequisites.unshift "bundler:checkout"
+ 
+ desc "Install gems needed to run the tests"
+ task :install_test_deps => :clean do
+-  sh "gem install minitest -v '~> 4.0'"
++  sh "gem install minitest -v '>= 4.0' -v '< 6.0'"
+ end
+ 
+ begin
+-- 
+2.15.1
+
