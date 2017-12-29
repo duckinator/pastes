@@ -1,0 +1,1 @@
+setInterval(function x(){document.querySelector('.XVzU0b.J3yWx').click(); setTimeout(function(){document.querySelectorAll('.RveJvd.snByac')[1].click(); }, 100); }, 200);
