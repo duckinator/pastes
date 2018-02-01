@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+#define ali_malloc malloc
+
+#include "src/string.c"
+#include "src/number/main.c"
+#include <ali/number.h>
+
+int main()
+{
+    printf("'%s'\n", uint64_to_str_radix(10, 16));
+
+    return 0;
+}
