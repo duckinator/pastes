@@ -1,0 +1,56 @@
+diff --git a/include/awoo/modifiers.h b/include/awoo/modifiers.h
+index 6a29b89..68a3980 100644
+--- a/include/awoo/modifiers.h
++++ b/include/awoo/modifiers.h
+@@ -15,7 +15,7 @@
+ #define noreturn __attribute__((noreturn)) void
+ 
+ // Specify that a function should be automatically ran during boot.
+-#define autorun(fn) __attribute__((section (".autorun") )) void (* TOKENPASTE2(auto_run_, __LINE__) )(void) = &(fn)
++#define autorun(fn) __attribute__((constructor)) void (* TOKENPASTE2(auto_run_, __LINE__) )(void) = &(fn)
+ 
+ /* ==== Function pseudo modifiers. ==== */
+ // These indicate intent without changing functionality.
+diff --git a/src/kernel/main.c b/src/kernel/main.c
+index b4d9020..4ae3f65 100644
+--- a/src/kernel/main.c
++++ b/src/kernel/main.c
+@@ -5,17 +5,17 @@
+ #include <ali/number.h>
+ typedef void (autorun_fn)(void);
+ 
+-extern size_t kernel_autorun_start;
+-extern size_t kernel_autorun_end;
++extern size_t kernel_ctors_start;
++extern size_t kernel_ctors_end;
+ 
+ size_t get_kernel_autorun_start()
+ {
+-    return (size_t)&kernel_autorun_start;
++    return (size_t)&kernel_ctors_start;
+ }
+ 
+ size_t get_kernel_autorun_end()
+ {
+-    return (size_t)&kernel_autorun_end;
++    return (size_t)&kernel_ctors_end;
+ }
+ 
+ void test() { kprint("\r\nhello, world!\r\n"); }
+diff --git a/src/link-i386.ld b/src/link-i386.ld
+index 793cf6d..800df14 100644
+--- a/src/link-i386.ld
++++ b/src/link-i386.ld
+@@ -79,9 +79,9 @@ SECTIONS {
+ 		*(.debug_loc)
+ 		kernel_debug_loc_end = .;
+ 
+-		kernel_autorun_start = .;
+-		*(.autorun)
+-		kernel_autorun_end = .;
++		kernel_ctors_start = .;
++		*(.ctors)
++		kernel_ctors_end = .;
+ 	}
+ }
+ 
