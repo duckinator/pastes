@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+
+#Death Note - s01e01 - 
+#Death Note - s01e02 - 
+#Death Note - s01e03 - 
+
+require "open-uri"
+
+def lookup(episode_number)
+  @url ||= "https://www.thetvdb.com/?tab=seasonall&id=79481&lid=7"
+  @body ||= open(@url).read
+    .split('<table width="100%" border="0" cellspacing="0" cellpadding="2" align="center" id="listtable">')
+    .last
+    .split('</table>')
+    .first
+
+  @body.split("<tr>")[episode_number + 1].split("<td")[2].split('">')[2].split("</a>").first
+end
+
+offset = Integer(ARGV[0])
+
+Dir.glob("Death Note - *").sort.map { |filename|
+  episode = nil
+  new_filename = filename.sub(/(s\d+e)(\d+)/) { format("%s%0.2i", $1, episode=$2.to_i+6) }
+  new_filename += lookup(episode)
+  new_filename += ".mkv"
+
+  puts "Rename \"#{filename}\" to \"#{new_filename}\"? (Ctrl-c to cancel)"
+  $stdin.gets
+
+  File.rename(filename, new_filename)
+}
