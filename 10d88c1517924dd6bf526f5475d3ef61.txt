@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+
+#Death Note - s01e01 - 
+#Death Note - s01e02 - 
+#Death Note - s01e03 - 
+
+require "open-uri"
+
+if ARGV[0] == "--test"
+  (1..3).each do |series|
+    (1..3).each do |episode|
+      file = format("Death Note - s%0.2ie%0.2i - ", series, episode)
+      File.write(file, "")
+    end
+  end
+end
+
+def lookup(episode_number)
+  @url ||= "https://www.thetvdb.com/?tab=seasonall&id=79481&lid=7"
+  @body ||= open(@url).read
+    .split('<table width="100%" border="0" cellspacing="0" cellpadding="2" align="center" id="listtable">')
+    .last
+    .split('</table>')
+    .first
+
+  @body.split("<tr>")[episode_number + 1].split("<td")[2].split('">')[2].split("</a>").first
+end
+
+Dir.glob("Death Note - *").map { |filename|
+  episode = nil
+  new_filename = filename.sub(/(s\d+e)(\d+)/) { format("%s%0.2i", $1, episode=$2.to_i+6) }
+  new_filename += lookup(episode)
+
+  File.rename(filename, new_filename)
+}
