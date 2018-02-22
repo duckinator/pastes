@@ -1,0 +1,36 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <error.h>
+#include "src/header.h"
+#include <dmm.h>
+#include <dmm_instance.h>
+
+#define gc_init(size)       \
+    char _gc_buf[size];     \
+    DMM_MallocHeader *dmm_instance = \
+        dmm_instance_add_memory_region(dmm_instance, _gc_buf, size)
+
+#define gc_malloc(size) dmm_instance_malloc(dmm_instance, size);
+
+void fake_panic(const char *message, const char *function,
+        const char *filename, size_t line, size_t automated)
+{
+    error_at_line(1, 0, filename, line, "%s", message);
+}
+
+
+int main()
+{
+    gc_init(1024 * 10); // 10KB.
+
+    char *foo = gc_malloc(14);
+    strcpy(foo, "hello, world!");
+    printf("foo (%p): %s\r\n", (void*)foo, foo);
+
+    char *bar = gc_malloc(14);
+    strcpy(bar, "hello, world!");
+    printf("bar (%p): %s\r\n", (void*)bar, bar);
+
+    return 0;
+}
