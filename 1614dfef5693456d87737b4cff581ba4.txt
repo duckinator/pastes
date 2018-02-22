@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char _foo[10];
+    char *foo = (char*)&_foo;
+
+    strcpy(foo, "meep");
+
+    printf("%s\n", foo);
+
+    return 0;
+}
