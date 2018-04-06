@@ -1,0 +1,48 @@
+.
+├── ansible.cfg
+├── desktop.yml
+├── eternal-pickle.yml
+├── LICENSE
+├── quasar-snake.yml
+├── README.md
+└── roles
+    ├── common
+    │   └── tasks
+    │       ├── main.yml
+    │       ├── packages-Debian.yml
+    │       ├── packages-Fedora.yml
+    │       ├── packages-FreeBSD.yml
+    │       └── packages-Kali-GNU-Linux.yml
+    ├── docker-ce
+    │   └── tasks
+    │       ├── add-repo-Debian.yml
+    │       ├── add-repo-Fedora.yml
+    │       ├── add-repo-Kali-GNU-Linux.yml
+    │       └── main.yml
+    ├── groups
+    │   └── tasks
+    │       └── main.yml
+    ├── system-upgrade
+    │   └── tasks
+    │       ├── main.yml
+    │       ├── package-upgrade-Debian.yml
+    │       ├── package-upgrade-Fedora.yml
+    │       └── package-upgrade-Kali-GNU-Linux.yml
+    └── user-accounts
+        ├── defaults
+        │   └── main.yml
+        ├── files
+        │   ├── etc
+        │   │   └── sudoers.d
+        │   │       └── 99-usr-local-sudoers
+        │   └── usr
+        │       └── local
+        │           └── etc
+        │               └── sudoers.d
+        │                   └── 99-sudo
+        ├── meta
+        │   └── main.yml
+        └── tasks
+            └── main.yml
+
+20 directories, 25 files
