@@ -1,0 +1,41 @@
+~/x$ tree
+.
+├── ldlinux.c32 -> ubuntu-installer/amd64/boot-screens/ldlinux.c32
+├── netboot.tar.gz
+├── pxelinux.0 -> ubuntu-installer/amd64/pxelinux.0
+├── pxelinux.cfg -> ubuntu-installer/amd64/pxelinux.cfg
+├── ubuntu-installer
+│   └── amd64
+│       ├── boot-screens
+│       │   ├── adtxt.cfg
+│       │   ├── exithelp.cfg
+│       │   ├── f10.txt
+│       │   ├── f1.txt
+│       │   ├── f2.txt
+│       │   ├── f3.txt
+│       │   ├── f4.txt
+│       │   ├── f5.txt
+│       │   ├── f6.txt
+│       │   ├── f7.txt
+│       │   ├── f8.txt
+│       │   ├── f9.txt
+│       │   ├── ldlinux.c32
+│       │   ├── libcom32.c32
+│       │   ├── libutil.c32
+│       │   ├── menu.cfg
+│       │   ├── prompt.cfg
+│       │   ├── rqtxt.cfg
+│       │   ├── splash.png
+│       │   ├── stdmenu.cfg
+│       │   ├── syslinux.cfg
+│       │   ├── txt.cfg
+│       │   └── vesamenu.c32
+│       ├── initrd.gz
+│       ├── linux
+│       ├── pxelinux.0
+│       └── pxelinux.cfg
+│           └── default -> ../boot-screens/syslinux.cfg
+└── version.info
+
+5 directories, 31 files
+~/x$
