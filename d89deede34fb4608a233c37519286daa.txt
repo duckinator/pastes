@@ -1,0 +1,1068 @@
+
+src/kernel.exe:     file format elf32-i386
+
+SYMBOL TABLE:
+00100000 l    d  .debug_info	00000000 .debug_info
+00104000 l    d  .text	00000000 .text
+00114b98 l    d  .rodata.str1.1	00000000 .rodata.str1.1
+00116000 l    d  .data	00000000 .data
+0011626c l    d  .got	00000000 .got
+001163b4 l    d  .got.plt	00000000 .got.plt
+00117000 l    d  .bss	00000000 .bss
+00000000 l    df *ABS*	00000000 src/kernel/main.c
+0010bfe2 l       .text	00000000 
+0010c048 l       .text	00000000 
+0010c03d l       .text	00000000 
+0010c17c l       .text	00000000 
+0010c01a l       .text	00000000 
+0010bfd0 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c031 l       .text	00000000 
+0010bff6 l       .text	00000000 
+0010bfec l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010c001 l       .text	00000000 
+00116000 l     O .data	00000004 AWOO_INFO
+00000000 l    df *ABS*	00000000 src/libraries/tests/src/main.c
+0010c19e l       .text	00000000 
+0010c06d l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c091 l       .text	00000000 
+0010c048 l       .text	00000000 
+0010c03d l       .text	00000000 
+0010cadb l       .text	00000000 
+0010c07b l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c04e l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/tinker/src/main.c
+0010c1d2 l       .text	00000000 
+0010c1c9 l       .text	00000000 
+0010c6cf l       .text	00000000 
+0010d24a l       .text	00000000 
+0010c197 l       .text	00000000 
+0010d284 l       .text	00000000 
+0010c1c4 l       .text	00000000 
+0010c181 l       .text	00000000 
+0010c0f6 l       .text	00000000 
+0010c170 l       .text	00000000 
+0010c1bc l       .text	00000000 
+0010c1a8 l       .text	00000000 
+0010c1b5 l       .text	00000000 
+0010c048 l       .text	00000000 
+0010c0d3 l       .text	00000000 
+0010c11d l       .text	00000000 
+0010c167 l       .text	00000000 
+0010c12b l       .text	00000000 
+0010c0fb l       .text	00000000 
+0010c106 l       .text	00000000 
+0010c13b l       .text	00000000 
+0010c110 l       .text	00000000 
+0010c150 l       .text	00000000 
+0010c10f l       .text	00000000 
+0010c0ed l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c0a2 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c0c2 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010c0cd l       .text	00000000 
+0010c09b l       .text	00000000 
+0010d01c l       .text	00000000 
+0010c0da l       .text	00000000 
+0010c0e2 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0011b034 l     O .bss	00000004 _tinker_print
+0011b038 l     O .bss	00000004 last_test_index
+0011b03c l     O .bss	00202000 test_cases
+00116004 l     O .data	00000010 test_status_messages
+00000000 l    df *ABS*	00000000 src/libraries/flail/src/main_test.c
+0010bf86 l       .text	00000000 
+0010c208 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c1e4 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/flail/src/main.c
+0010c2bb l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010c2ae l       .text	00000000 
+0010c2cb l       .text	00000000 
+0010c284 l       .text	00000000 
+0010c6cf l       .text	00000000 
+0010c2c2 l       .text	00000000 
+0010c2a4 l       .text	00000000 
+0010c297 l       .text	00000000 
+0010c1bc l       .text	00000000 
+0010c2da l       .text	00000000 
+0010c2d1 l       .text	00000000 
+0010c0ed l       .text	00000000 
+0010c2ca l       .text	00000000 
+0010c481 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c225 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c244 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010c250 l       .text	00000000 
+0010c25d l       .text	00000000 
+0010c266 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c26f l       .text	00000000 
+0031d044 l     O .bss	00000004 in_panic
+0031d040 l     O .bss	00000004 info_str
+00000000 l    df *ABS*	00000000 src/libraries/flail/src/uint_to_str.c
+0010bf86 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010cca0 l       .text	00000000 
+0010c2e3 l       .text	00000000 
+0010d11d l       .text	00000000 
+0010c309 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010c2bb l       .text	00000000 
+0010d24a l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c0c6 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/magic.c
+0010c15a l       .text	00000000 
+0010c36c l       .text	00000000 
+0010c373 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c35c l       .text	00000000 
+0010c31b l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c366 l       .text	00000000 
+0010c342 l       .text	00000000 
+0010c339 l       .text	00000000 
+0010c34a l       .text	00000000 
+0010c34e l       .text	00000000 
+0031d048 l     O .bss	00000004 arg
+0031d04c l     O .bss	00000004 magic
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/events.c
+0010bfe2 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c397 l       .text	00000000 
+0010c378 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/tests.c
+0010bfe2 l       .text	00000000 
+0010c3dd l       .text	00000000 
+0010c3c9 l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c3ab l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c1d2 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/shutdown.c
+0010c3eb l       .text	00000000 
+0010c43b l       .text	00000000 
+0010c448 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010cadb l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c40c l       .text	00000000 
+0010c429 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/flail.c
+0010bf86 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c48c l       .text	00000000 
+0010c45f l       .text	00000000 
+0010cadb l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010c47d l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/idt.c
+0010c498 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c4b4 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c4da l       .text	00000000 
+0010c4b8 l       .text	00000000 
+0010c4c2 l       .text	00000000 
+0010c4d1 l       .text	00000000 
+0010c508 l       .text	00000000 
+0010c4e3 l       .text	00000000 
+0010c4e8 l       .text	00000000 
+0010c4f6 l       .text	00000000 
+0010c6a7 l       .text	00000000 
+0010c4fe l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010c514 l       .text	00000000 
+0010c0ed l       .text	00000000 
+0010c51d l       .text	00000000 
+0010d364 l       .text	00000000 
+0010c522 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c339 l       .text	00000000 
+0010c529 l       .text	00000000 
+0010c537 l       .text	00000000 
+0010cca0 l       .text	00000000 
+0010c542 l       .text	00000000 
+0010c54f l       .text	00000000 
+0010c55c l       .text	00000000 
+0010c56d l       .text	00000000 
+0010c591 l       .text	00000000 
+0010c588 l       .text	00000000 
+0010c58d l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/multiboot.c
+0010c150 l       .text	00000000 
+0010c79e l       .text	00000000 
+0010c7ad l       .text	00000000 
+0010c780 l       .text	00000000 
+0010c742 l       .text	00000000 
+0010c7b8 l       .text	00000000 
+0010cc1c l       .text	00000000 
+0010cbea l       .text	00000000 
+0010c78b l       .text	00000000 
+0010c59a l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c5bc l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c75a l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010c5cd l       .text	00000000 
+0010c5dc l       .text	00000000 
+0010c5f9 l       .text	00000000 
+0010c618 l       .text	00000000 
+0010c636 l       .text	00000000 
+0010c65c l       .text	00000000 
+0010c675 l       .text	00000000 
+0010c692 l       .text	00000000 
+0010c772 l       .text	00000000 
+0010c339 l       .text	00000000 
+0010c6ac l       .text	00000000 
+0010c6b6 l       .text	00000000 
+0010c6c0 l       .text	00000000 
+0010c6cc l       .text	00000000 
+0010c6d4 l       .text	00000000 
+0010c6df l       .text	00000000 
+0010c6e9 l       .text	00000000 
+0010c0ed l       .text	00000000 
+0010c6f6 l       .text	00000000 
+0010c702 l       .text	00000000 
+0010c70c l       .text	00000000 
+0010c71d l       .text	00000000 
+0010d364 l       .text	00000000 
+0010c707 l       .text	00000000 
+0010c6a7 l       .text	00000000 
+0010c167 l       .text	00000000 
+0010d254 l       .text	00000000 
+0010c72b l       .text	00000000 
+00116098 l     O .data	00000004 hal_kernel_end
+00116094 l     O .data	00000004 hal_kernel_start
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/basic_uart.c
+0010c4f1 l       .text	00000000 
+0010c163 l       .text	00000000 
+0010c84f l       .text	00000000 
+0010c83b l       .text	00000000 
+0010d284 l       .text	00000000 
+0010c7c5 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c80f l       .text	00000000 
+0010c7e8 l       .text	00000000 
+0010c4c2 l       .text	00000000 
+0010c4d1 l       .text	00000000 
+0010c7fe l       .text	00000000 
+0010c803 l       .text	00000000 
+0010c823 l       .text	00000000 
+0010c4e8 l       .text	00000000 
+0010c4f6 l       .text	00000000 
+0031d850 l     O .bss	00000002 LINE_CONTROL_REGISTER
+0011609c l     O .data	00000002 PORT
+0031d854 l     O .bss	00000004 initialized
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/panic.c
+0010c864 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c882 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c88d l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010c899 l       .text	00000000 
+0010c8a8 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/keyboard.c
+0010c8f5 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010c934 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c979 l       .text	00000000 
+0010c8b0 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c8d1 l       .text	00000000 
+0010cadb l       .text	00000000 
+0010c0ed l       .text	00000000 
+0010c8db l       .text	00000000 
+0010c8eb l       .text	00000000 
+0010c8f1 l       .text	00000000 
+0010c048 l       .text	00000000 
+0010c99f l       .text	00000000 
+0010c8fb l       .text	00000000 
+0010c901 l       .text	00000000 
+0010c906 l       .text	00000000 
+0010c90b l       .text	00000000 
+0010c910 l       .text	00000000 
+0010c915 l       .text	00000000 
+0010c91c l       .text	00000000 
+0010c923 l       .text	00000000 
+0010c92b l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c93f l       .text	00000000 
+0010c337 l       .text	00000000 
+0010c941 l       .text	00000000 
+0010c946 l       .text	00000000 
+0010c956 l       .text	00000000 
+0010c964 l       .text	00000000 
+0010c982 l       .text	00000000 
+0010c998 l       .text	00000000 
+0010c339 l       .text	00000000 
+0031d85c l     O .bss	00000027 state
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/basic_display.c
+0010d284 l       .text	00000000 
+0010ca95 l       .text	00000000 
+0010cbea l       .text	00000000 
+0010c339 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010caa0 l       .text	00000000 
+0010caac l       .text	00000000 
+0010ca82 l       .text	00000000 
+0010ca87 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c9a5 l       .text	00000000 
+0010c4c2 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010ca8c l       .text	00000000 
+0010ca1b l       .text	00000000 
+0010c9cb l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010c0ed l       .text	00000000 
+0010c9d2 l       .text	00000000 
+0010c9d8 l       .text	00000000 
+0010c4e8 l       .text	00000000 
+0010c4f6 l       .text	00000000 
+0010caad l       .text	00000000 
+0010c9dc l       .text	00000000 
+0010ca69 l       .text	00000000 
+0010c4d1 l       .text	00000000 
+0010c9ee l       .text	00000000 
+0010ca00 l       .text	00000000 
+0010ca0a l       .text	00000000 
+0010ca39 l       .text	00000000 
+0010ca51 l       .text	00000000 
+001161a8 l     O .data	00000001 BACKGROUND_COLOR
+001161a0 l     O .data	00000002 VGA_CTRL_REGISTER
+001161a2 l     O .data	00000002 VGA_DATA_REGISTER
+001161a4 l     O .data	00000004 VIDEO_RAM
+0031d885 l     O .bss	00000001 col
+0031d886 l     O .bss	000007d1 hal_basic_display_clear.spaces
+0031e058 l     O .bss	00000004 hal_basic_display_print.video
+0031d884 l     O .bss	00000001 row
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/init.c
+0010c0ed l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010cad7 l       .text	00000000 
+0010cadb l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010cab1 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010cace l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/ports.c
+0010cae0 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010cafe l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010cb0f l       .text	00000000 
+0010cb07 l       .text	00000000 
+0010c4e8 l       .text	00000000 
+0010c4f6 l       .text	00000000 
+0010cb17 l       .text	00000000 
+0010c4c2 l       .text	00000000 
+0010c4d1 l       .text	00000000 
+0010cb1c l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/interrupts.c
+0010cb22 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010cb45 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010cb5b l       .text	00000000 
+0010cadb l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/exceptions.c
+0010cc18 l       .text	00000000 
+0010cc1f l       .text	00000000 
+0010cbe8 l       .text	00000000 
+0010cc39 l       .text	00000000 
+0010cbec l       .text	00000000 
+0010cc14 l       .text	00000000 
+0010cc04 l       .text	00000000 
+0010c0ed l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010cc1b l       .text	00000000 
+0010cc2d l       .text	00000000 
+0010cc22 l       .text	00000000 
+0010cc2a l       .text	00000000 
+0010cbf8 l       .text	00000000 
+0010cbce l       .text	00000000 
+0010cbf0 l       .text	00000000 
+0010cc26 l       .text	00000000 
+0010cbe2 l       .text	00000000 
+0010cbf4 l       .text	00000000 
+0010cb72 l       .text	00000000 
+0010cbfc l       .text	00000000 
+0010cc00 l       .text	00000000 
+0010cbe5 l       .text	00000000 
+0010cbaa l       .text	00000000 
+0010cbc0 l       .text	00000000 
+0010ca4f l       .text	00000000 
+0010cc0b l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010d12f l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010cb95 l       .text	00000000 
+0010cba0 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010c15a l       .text	00000000 
+001161ac l     O .data	00000080 exceptions
+0011622c l     O .data	00000040 irq_names
+00000000 l    df *ABS*	00000000 src/libraries/dmm/src/test.c
+0010cc43 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010cc60 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/dmm/src/init.c
+0010cc6e l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010cc8b l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010cc96 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010cca2 l       .text	00000000 
+0010ccab l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/dmm/src/main.c
+0010ccb4 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010ccd1 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010d364 l       .text	00000000 
+0010c366 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c339 l       .text	00000000 
+0010cea3 l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010cce5 l       .text	00000000 
+0010cc1c l       .text	00000000 
+0010cadb l       .text	00000000 
+0010ccea l       .text	00000000 
+0010cd39 l       .text	00000000 
+0010c2d1 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010c0ed l       .text	00000000 
+0010c2da l       .text	00000000 
+0010c6cf l       .text	00000000 
+0010ccef l       .text	00000000 
+0010cd03 l       .text	00000000 
+0010cd14 l       .text	00000000 
+0010cd28 l       .text	00000000 
+0010cd7f l       .text	00000000 
+0010cd4f l       .text	00000000 
+0010ce39 l       .text	00000000 
+0010cd68 l       .text	00000000 
+0010cd72 l       .text	00000000 
+0010c5c7 l       .text	00000000 
+0010d254 l       .text	00000000 
+0010c150 l       .text	00000000 
+0010c167 l       .text	00000000 
+0010c1b1 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/dmm/src/instance_test.c
+0010c2da l       .text	00000000 
+0010cdd7 l       .text	00000000 
+0010cd03 l       .text	00000000 
+0010cd28 l       .text	00000000 
+0010c6cf l       .text	00000000 
+0010c1d2 l       .text	00000000 
+0010cdf0 l       .text	00000000 
+0010cdba l       .text	00000000 
+0010ccef l       .text	00000000 
+0010ce0c l       .text	00000000 
+0010d254 l       .text	00000000 
+0010cdd0 l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010cd14 l       .text	00000000 
+0010cea3 l       .text	00000000 
+0010cd86 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010cdac l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010d364 l       .text	00000000 
+0010c366 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c339 l       .text	00000000 
+0010cd7f l       .text	00000000 
+0010c0ed l       .text	00000000 
+0010cce5 l       .text	00000000 
+0010cc1c l       .text	00000000 
+0010cadb l       .text	00000000 
+0010ccea l       .text	00000000 
+0010c2d1 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/dmm/src/main_test.c
+0010cadb l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c0ed l       .text	00000000 
+0010cd28 l       .text	00000000 
+0010ccef l       .text	00000000 
+0010ce45 l       .text	00000000 
+0010ce35 l       .text	00000000 
+0010cd14 l       .text	00000000 
+0010c2da l       .text	00000000 
+0010cdd0 l       .text	00000000 
+0010ce0c l       .text	00000000 
+0010cd03 l       .text	00000000 
+0010c1d2 l       .text	00000000 
+0010ce5f l       .text	00000000 
+0010c6cf l       .text	00000000 
+0010ce13 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c366 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c339 l       .text	00000000 
+0010d364 l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010cce5 l       .text	00000000 
+0010cc1c l       .text	00000000 
+0010c2d1 l       .text	00000000 
+0010ccea l       .text	00000000 
+0010cea3 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/dmm/src/instance.c
+0010d254 l       .text	00000000 
+0010cf3e l       .text	00000000 
+0010ceec l       .text	00000000 
+0010c0ed l       .text	00000000 
+0010cf2a l       .text	00000000 
+0010c1b1 l       .text	00000000 
+0010c339 l       .text	00000000 
+0010cf36 l       .text	00000000 
+0010cd7f l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010ce7e l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c366 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010cf20 l       .text	00000000 
+0010d364 l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010cce5 l       .text	00000000 
+0010cc1c l       .text	00000000 
+0010cadb l       .text	00000000 
+0010ccea l       .text	00000000 
+0010cea3 l       .text	00000000 
+0010c2d1 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010ce0c l       .text	00000000 
+0010c2da l       .text	00000000 
+0010c6cf l       .text	00000000 
+0010ccef l       .text	00000000 
+0010cd03 l       .text	00000000 
+0010cd14 l       .text	00000000 
+0010cd28 l       .text	00000000 
+0010ce9f l       .text	00000000 
+0010ceb1 l       .text	00000000 
+0010ced0 l       .text	00000000 
+0010cddb l       .text	00000000 
+0010cef2 l       .text	00000000 
+0010cf05 l       .text	00000000 
+0010cbea l       .text	00000000 
+0010ccdc l       .text	00000000 
+0010c5c7 l       .text	00000000 
+0010cf1b l       .text	00000000 
+0010c150 l       .text	00000000 
+0010c167 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/ali/src/event.c
+0010cf8d l       .text	00000000 
+0010c15a l       .text	00000000 
+0010d016 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010cbb8 l       .text	00000000 
+0010cf47 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010cf65 l       .text	00000000 
+0010cadb l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010cf76 l       .text	00000000 
+0010d01c l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010cf83 l       .text	00000000 
+0010cff6 l       .text	00000000 
+0010cf96 l       .text	00000000 
+0010c0ed l       .text	00000000 
+0010cfa6 l       .text	00000000 
+0010cfb6 l       .text	00000000 
+0010cfc4 l       .text	00000000 
+0010cfdc l       .text	00000000 
+0010cffc l       .text	00000000 
+0010c048 l       .text	00000000 
+0010d008 l       .text	00000000 
+0010cbea l       .text	00000000 
+0031e06c l     O .bss	000028a0 event_groups
+0031e068 l     O .bss	00000004 number_of_events
+00000000 l    df *ABS*	00000000 src/libraries/ali/src/string.c
+0010d021 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c4e8 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010d047 l       .text	00000000 
+0010c4f6 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010d040 l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010d04f l       .text	00000000 
+0010d056 l       .text	00000000 
+0010d05d l       .text	00000000 
+0010d065 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010d08f l       .text	00000000 
+0010d06c l       .text	00000000 
+0010c163 l       .text	00000000 
+0010d073 l       .text	00000000 
+0010d07b l       .text	00000000 
+0010d082 l       .text	00000000 
+0010d08a l       .text	00000000 
+0010d090 l       .text	00000000 
+0010cca0 l       .text	00000000 
+0010d089 l       .text	00000000 
+0010d24a l       .text	00000000 
+0010cbea l       .text	00000000 
+0010d094 l       .text	00000000 
+0010c0ed l       .text	00000000 
+0010c104 l       .text	00000000 
+0010c337 l       .text	00000000 
+0010d098 l       .text	00000000 
+0010c262 l       .text	00000000 
+0010c2a9 l       .text	00000000 
+0010d09c l       .text	00000000 
+0010d09f l       .text	00000000 
+0010d0a2 l       .text	00000000 
+0010d0a9 l       .text	00000000 
+0010d254 l       .text	00000000 
+0010d0b0 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/ali/src/number/main.c
+0010d0eb l       .text	00000000 
+0010c150 l       .text	00000000 
+0010c048 l       .text	00000000 
+0010d11d l       .text	00000000 
+0010d254 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010d0bc l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010d24a l       .text	00000000 
+0010c167 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010c4e8 l       .text	00000000 
+0010c4f6 l       .text	00000000 
+0010d0e0 l       .text	00000000 
+0010d14c l       .text	00000000 
+0010d0f6 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010d10f l       .text	00000000 
+0010d110 l       .text	00000000 
+0010cade l       .text	00000000 
+0010d35c l       .text	00000000 
+0010d094 l       .text	00000000 
+0010cca0 l       .text	00000000 
+0010d13e l       .text	00000000 
+0010d123 l       .text	00000000 
+0010cd7f l       .text	00000000 
+0010cb1c l       .text	00000000 
+0010d132 l       .text	00000000 
+0010c168 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/ali/src/main_test.c
+0010d158 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010d17a l       .text	00000000 
+0010bfe2 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/ali/src/str/test.c
+0010d188 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010d1a9 l       .text	00000000 
+0010bf86 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/ali/src/str/charsplit_test.c
+0010c4f1 l       .text	00000000 
+0010d206 l       .text	00000000 
+0010d1fd l       .text	00000000 
+0010c15a l       .text	00000000 
+0010d1bb l       .text	00000000 
+0010c1d2 l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010d1e6 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010bf86 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/ali/src/str/charsplit.c
+0010d238 l       .text	00000000 
+0010d212 l       .text	00000000 
+0010c2bb l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c337 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010d1f3 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010d44b l       .text	00000000 
+0010d23e l       .text	00000000 
+0010c262 l       .text	00000000 
+0010d0a5 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010cbea l       .text	00000000 
+0010d244 l       .text	00000000 
+0010d24e l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/ali/src/text.c
+0010bf86 l       .text	00000000 
+0010c24a l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010d280 l       .text	00000000 
+0010d254 l       .text	00000000 
+0010d25b l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010d278 l       .text	00000000 
+0010d284 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/ali/src/main.c
+0010d28b l       .text	00000000 
+0010c15a l       .text	00000000 
+0010cf13 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010d347 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010d2a8 l       .text	00000000 
+0010cde9 l       .text	00000000 
+0010c2bb l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010d2ae l       .text	00000000 
+0010cf00 l       .text	00000000 
+0010d2ba l       .text	00000000 
+0010c6cf l       .text	00000000 
+0010d2c4 l       .text	00000000 
+0010d2d1 l       .text	00000000 
+0010d2f0 l       .text	00000000 
+0010d30a l       .text	00000000 
+0010d313 l       .text	00000000 
+0010d31e l       .text	00000000 
+0010d327 l       .text	00000000 
+0010d332 l       .text	00000000 
+0010d33e l       .text	00000000 
+0010d35e l       .text	00000000 
+0010d34e l       .text	00000000 
+0010d364 l       .text	00000000 
+0010c2d1 l       .text	00000000 
+0010c2da l       .text	00000000 
+0010c1b1 l       .text	00000000 
+0010d358 l       .text	00000000 
+0032090c l     O .bss	0000000c mmfns
+00000000 l    df *ABS*	00000000 src/libraries/ali/src/number/main_test.c
+0010c168 l       .text	00000000 
+0010d13e l       .text	00000000 
+0010d392 l       .text	00000000 
+0010d3c2 l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c1d2 l       .text	00000000 
+0010d3af l       .text	00000000 
+0010d3f6 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010d3e1 l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010d369 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/ali/src/str/shellsplit_test.c
+0010bfe2 l       .text	00000000 
+0010d206 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010d1fd l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010c1d2 l       .text	00000000 
+0010d447 l       .text	00000000 
+0010d44b l       .text	00000000 
+0010d42f l       .text	00000000 
+0010d403 l       .text	00000000 
+0010d452 l       .text	00000000 
+0010d465 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010c0c6 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/ali/src/str/shellsplit.c
+0010c4f1 l       .text	00000000 
+0010d476 l       .text	00000000 
+0010d238 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010d4bb l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010d43c l       .text	00000000 
+0010d44b l       .text	00000000 
+0010c337 l       .text	00000000 
+0010d447 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010d452 l       .text	00000000 
+0010d465 l       .text	00000000 
+0010d4ac l       .text	00000000 
+0010cd7f l       .text	00000000 
+0010c262 l       .text	00000000 
+0010d0a5 l       .text	00000000 
+0010c2bb l       .text	00000000 
+0010d244 l       .text	00000000 
+0010d24e l       .text	00000000 
+0010cbea l       .text	00000000 
+0010d49d l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/libraries/greeter/src/main.c
+0010d4c5 l       .text	00000000 
+0010d4ff l       .text	00000000 
+0010c0c6 l       .text	00000000 
+0010bf86 l       .text	00000000 
+0010d24a l       .text	00000000 
+0010bfe2 l       .text	00000000 
+0010c4f1 l       .text	00000000 
+0010d4e6 l       .text	00000000 
+0010c15a l       .text	00000000 
+0010cadb l       .text	00000000 
+0010cad7 l       .text	00000000 
+00000000 l    df *ABS*	00000000 src/kernel/start-i386.asm
+00004000 l       *ABS*	00000000 STACKSIZE
+00000001 l       *ABS*	00000000 MODULEALIGN
+00000002 l       *ABS*	00000000 MEMINFO
+00000003 l       *ABS*	00000000 FLAGS
+1badb002 l       *ABS*	00000000 MAGIC
+e4524ffb l       *ABS*	00000000 CHECKSUM
+00104000 l       .text	00000000 MultiBootHeader
+00000000 l    df *ABS*	00000000 src/libraries/flail/src/platform-i386/main.asm
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/gdt.asm
+0010554e l       .text	00000000 hal_gdt_init.reload
+00116014 l       .data	00000000 _gdt_begin
+00116014 l       .data	00000000 _gdt_null
+0011601c l       .data	00000000 _gdt_code
+00116024 l       .data	00000000 _gdt_data
+0011602c l       .data	00000000 _gdt_user_code
+00116034 l       .data	00000000 _gdt_user_data
+0011603c l       .data	00000000 _gdt_tss
+00116044 l       .data	00000000 _gdt_end
+00116044 l       .data	00000000 _gdt_desc
+0011604a l       .data	00000000 _tss_begin
+00116092 l       .data	00000000 _tss_begin._tss_data_end
+00116094 l       .data	00000000 _tss_end
+00000000 l    df *ABS*	00000000 src/libraries/hal/src/exception-stubs.asm
+00106f00 l       .text	00000000 hal_exception_common
+00000000 l    df *ABS*	00000000 
+001163b4 l     O .got.plt	00000000 _GLOBAL_OFFSET_TABLE_
+00108fb0 g     F .text	0000005e strcpy
+00105830 g     F .text	00000092 hal_multiboot_init
+00110702 g       .text	00000000 kernel_debug_pubtypes_end
+00106f66 g       .text	00000000 hal_exception_9
+00104000 g       .text	00000000 kernel_code_start
+00104630 g     F .text	0000027d tinker_run_tests
+00109c60 g     F .text	00000040 print
+00105310 g     F .text	00000061 hal_flail_init
+00104050 g     F .text	00000017 get_kernel_autorun_end
+00106f29 g       .text	00000000 hal_exception_0
+00104e40 g     F .text	00000219 hal_register_events
+00106530 g     F .text	0000001f hal_inw
+00105380 g     F .text	00000018 hal_idt_load
+0010b200 g     F .text	0000056c test_ali_signedness_assertions
+00106f3e g       .text	00000000 hal_exception_3
+00106f4c g       .text	00000000 hal_exception_5
+001042b0 g     F .text	00000036 tests_register_events
+001097e0 g     F .text	00000053 add_ali_str_tests
+00108eb0 g     F .text	0000009c memmove
+001042f0 g     F .text	00000031 tinker_print
+00104c90 g     F .text	0000006f _flail_panic
+00106f72 g       .text	00000000 hal_exception_11
+0011172c g       .text	00000000 kernel_debug_frame_end
+001053a0 g     F .text	00000033 hal_idt_init
+00107036 g       .text	00000000 hal_exception_32
+001096a0 g     F .text	00000101 int64_to_str_radix
+00107460 g     F .text	000003c6 test_dmm_instance_add_region
+00106570 g     F .text	000000f5 hal_exception_handler
+00106fb4 g       .text	00000000 hal_exception_19
+001041a0 g     F .text	00000105 run_tests
+00110702 g       .text	00000000 kernel_debug_frame_start
+00105a70 g     F .text	00000043 hal_basic_uart_wait
+00104de0 g     F .text	00000017 hal_get_magic
+00106810 g     F .text	000006ea hal_exceptions_init
+00106fe6 g       .text	00000000 hal_exception_24
+00106560 g     F .text	00000010 hal_interrupts_disable
+00108e40 g     F .text	00000061 memcpy
+0031e060 g     O .bss	00000004 dmm_global_instance
+00106f77 g       .text	00000000 hal_exception_12
+001070cc g       .text	00000000 hal_exception_47
+00107040 g       .text	00000000 hal_exception_33
+0010b140 g     F .text	000000be test_ali_is_number
+0010d517 g       .text	00000000 kernel_debug_str_end
+00115000 g       .rodata.str1.1	00000000 kernel_rodata_end
+00115000 g       .rodata.str1.1	00000000 kernel_rodata_start
+00109a90 g     F .text	000001d0 charsplit
+001092a0 g     F .text	00000092 strrev
+001070e0 g     F .text	000000c7 add_dmm_tests
+00105ff0 g     F .text	000000e1 hal_basic_display_move_cursor
+00107340 g     F .text	00000077 _dmm_free
+00106fd2 g       .text	00000000 hal_exception_22
+00106ff0 g       .text	00000000 hal_exception_25
+0010eac4 g       .text	00000000 kernel_debug_abbrev_end
+00107280 g     F .text	00000038 dmm_get_first_free_chunk
+001070b8 g       .text	00000000 hal_exception_45
+00107090 g       .text	00000000 hal_exception_41
+0011172c g       .text	00000000 kernel_debug_line_start
+00106f5a g       .text	00000000 hal_exception_7
+00105060 g     F .text	000000e8 test_hal_assertions
+0031d03c g     O .bss	00000004 flail_print
+00106f37 g       .text	00000000 hal_exception_2
+00104d0a g       .text	00000000 flail_wait_forever
+00106550 g     F .text	00000010 hal_interrupts_enable
+00108970 g     F .text	000000a2 _dmm_instance_free
+00104030 g     F .text	0000001a get_kernel_autorun_start
+00106f30 g       .text	00000000 hal_exception_1
+00117020 g       .bss	00000000 stack_bottom
+0031d858 g     O .bss	00000004 _hal_panic
+0011609e g     O .data	00000080 keysym_us
+00106fa0 g       .text	00000000 hal_exception_17
+0010eaec g       .text	00000000 kernel_debug_macinfo_end
+0010707c g       .text	00000000 hal_exception_39
+00107072 g       .text	00000000 hal_exception_38
+00108790 g     F .text	000001d7 _dmm_instance_malloc
+00109e60 g     F .text	0000007e ali_free
+00106f53 g       .text	00000000 hal_exception_6
+001058d0 g     F .text	00000164 hal_basic_uart_init
+00107830 g     F .text	0000029f test_dmm_instance_malloc
+00114b92 g       .text	00000000 kernel_ctors_start
+00108c60 g     F .text	000000a1 _ali_event_find_or_create_group
+00117000 g       .bss	00000000 kernel_bss_start
+001071b0 g     F .text	00000024 dmm_init
+00108420 g     F .text	00000141 dmm_call_location
+001040a0 g     F .text	00000063 kernel_main
+0010bf86 g       .text	00000000 kernel_comment_start
+0010b770 g     F .text	00000070 add_ali_number_tests
+001054b0 g     F .text	00000084 hal_idt_register_exception
+001055f0 g     F .text	0000017b multiboot_validate_info
+00105540 g       .text	00000000 hal_gdt_init
+0010bf86 g       .text	00000000 kernel_debug_info_start
+00106f6d g       .text	00000000 hal_exception_10
+00105770 g     F .text	000000bc multiboot_add_mmap_entry
+0010702c g       .text	00000000 hal_exception_31
+0010f9a6 g       .text	00000000 kernel_debug_pubnames_end
+00107ad0 g     F .text	00000262 test_dmm_instance_free_sets_header
+00116000 g       .data	00000000 kernel_data_start
+00106faa g       .text	00000000 hal_exception_18
+00104dc0 g     F .text	00000017 hal_get_arg
+00117000 g     O .bss	00000006 idtd
+00105b50 g     F .text	00000024 hal_panic_init
+00104330 g     F .text	00000082 _tinker_add_test
+001052c0 g     F .text	0000004f hal_shutdown_test_fail
+00104070 g     F .text	0000002c test
+0010400c g       .text	00000000 _start
+00108570 g     F .text	00000112 dmm_instance_add_memory_region
+00106fbe g       .text	00000000 hal_exception_20
+00106fdc g       .text	00000000 hal_exception_23
+00320918 g       .bss	00000000 kernel_end
+0010bf50 g     F .text	00000036 greeter_register_events
+001070c2 g       .text	00000000 hal_exception_46
+001070a4 g       .text	00000000 hal_exception_43
+00104110 g     F .text	0000008b test_shutdown
+00109110 g     F .text	00000100 strncmp
+0010700e g       .text	00000000 hal_exception_28
+001097b0 g     F .text	00000029 add_ali_tests
+00107d40 g     F .text	00000295 test_dmm_malloc
+00109010 g     F .text	00000053 strncpy
+0011b028 g     O .bss	00000004 passed
+0011626c g       .data	00000000 kernel_data_end
+0010bed0 g     F .text	0000007a greeter_display_greeting
+00106f61 g       .text	00000000 hal_exception_8
+001090c0 g     F .text	0000004e memcmp
+00105150 g     F .text	00000033 add_hal_tests
+001071e0 g     F .text	0000009e dmm_add_memory_region
+0011b020 g       .bss	00000000 stack_top
+00114b98 g       .text	00000000 kernel_ctors_end
+00109de0 g     F .text	0000007e ali_malloc
+00106f8c g       .text	00000000 hal_exception_15
+00104950 g     F .text	00000133 flail_stack_dump_hex
+00114b92 g       .text	00000000 kernel_debug_loc_end
+0010705e g       .text	00000000 hal_exception_36
+00109fa0 g     F .text	00000091 ali_realloc
+00106fc8 g       .text	00000000 hal_exception_21
+0010b7e0 g     F .text	0000034b test_ali_str_shellsplit
+00109420 g     F .text	00000067 uint64_mod
+001060e0 g     F .text	000000ac hal_basic_display_clear
+001070ae g       .text	00000000 hal_exception_44
+00107086 g       .text	00000000 hal_exception_40
+00107018 g       .text	00000000 hal_exception_29
+0010f9a6 g       .text	00000000 kernel_debug_pubtypes_start
+00108f50 g     F .text	00000057 memset
+001051e0 g     F .text	000000b0 hal_shutdown_hard
+0010bb30 g     F .text	00000391 shellsplit
+00320918 g       .bss	00000000 kernel_bss_end
+00109490 g     F .text	000000a3 decimal_places_in_uint64
+00109340 g     F .text	000000dc uint64_div
+00104910 g     F .text	00000037 flail_init
+00105290 g     F .text	00000024 hal_shutdown
+00114b71 g       .text	00000000 kernel_debug_line_end
+00106f96 g       .text	00000000 hal_exception_16
+00108690 g     F .text	000000f4 dmm_instance_get_first_free_chunk
+00107068 g       .text	00000000 hal_exception_37
+00107022 g       .text	00000000 hal_exception_30
+00109210 g     F .text	0000008a strcmp
+00107fe0 g     F .text	0000024e test_dmm_free_sets_header
+0031d050 g     O .bss	00000800 idt
+00108a20 g     F .text	000001bd _dmm_instance_realloc
+0031e064 g     O .bss	00000004 test_instance
+0010bf86 g       .text	00000000 kernel_debug_str_start
+0011b02c g     O .bss	00000004 failed
+00108d10 g     F .text	00000088 event_watch
+00109ee0 g     F .text	000000be ali_calloc
+0011b030 g     O .bss	00000004 skipped
+001064e0 g     F .text	00000026 hal_outb
+00104e00 g     F .text	00000037 hal_store_magic
+00109540 g     F .text	00000160 uint64_to_str_radix
+0010bf86 g       .text	00000000 kernel_debug_info_end
+0010d517 g       .text	00000000 kernel_debug_abbrev_start
+00114b71 g       .text	00000000 kernel_debug_loc_start
+00108be0 g     F .text	00000071 _ali_event_create_group
+00108da0 g     F .text	00000092 event_trigger
+00105ac0 g     F .text	00000081 hal_basic_uart_print
+00104d00 g       .text	00000000 flail_stack_dump
+001073c0 g     F .text	00000098 _dmm_realloc
+00104d10 g     F .text	000000b0 flail_uint_to_str
+0010eac4 g       .text	00000000 kernel_debug_macinfo_start
+00106670 g     F .text	0000019b hal_irq_remap
+0010a040 g     F .text	000010f9 test_ali_n_to_str_assertions
+00104a90 g     F .text	000001fe _flail_print_panic
+0031e05c g     O .bss	00000004 _dmm_panic
+00109d90 g     F .text	00000048 ali_init
+001053e0 g     F .text	000000cd hal_idt_set_gate
+0011b024 g     O .bss	00000004 total
+0010709a g       .text	00000000 hal_exception_42
+00106f7c g       .text	00000000 hal_exception_13
+0010704a g       .text	00000000 hal_exception_34
+00105190 g     F .text	0000004c wait_for_keyboard_controller
+00107004 g       .text	00000000 hal_exception_27
+0011611e g     O .data	00000080 keysym_us_shift
+0010eaec g       .text	00000000 kernel_debug_pubnames_start
+00106510 g     F .text	0000001d hal_inb
+001043c0 g     F .text	0000026b _tinker_print_results
+00109070 g     F .text	00000042 strlen
+00105bb0 g     F .text	00000434 hal_keyboard_callback
+00106f45 g       .text	00000000 hal_exception_4
+00106f84 g       .text	00000000 hal_exception_14
+00105a40 g     F .text	00000030 hal_basic_uart_can_send
+00107054 g       .text	00000000 hal_exception_35
+00106ffa g       .text	00000000 hal_exception_26
+00108230 g     F .text	000001f0 test_dmm_allocate_the_universe
+00106190 g     F .text	0000018f hal_basic_display_print
+00100000 g       *ABS*	00000000 kernel_start
+00109ca0 g     F .text	000000ec println
+0010bf86 g       .text	00000000 kernel_code_end
+0010bf86 g       .text	00000000 kernel_comment_end
+001048b0 g     F .text	00000051 test_flail_intentional_panic
+00109840 g     F .text	00000248 test_ali_str_charsplit
+00105b80 g     F .text	00000028 hal_keyboard_resolve_scancode
+00106440 g     F .text	0000009f hal_init
+00106320 g     F .text	00000120 hal_basic_display_scroll
+0011b020 g     O .bss	00000004 ran
+001072c0 g     F .text	00000077 _dmm_malloc
+
+
