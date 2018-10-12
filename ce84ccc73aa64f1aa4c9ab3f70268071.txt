@@ -1,0 +1,126 @@
+depth=2 C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert High Assurance EV Root CA
+verify return:1
+depth=1 C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 High Assurance Server CA
+verify return:1
+depth=0 C = US, ST = California, L = San Francisco, O = "Twitter, Inc.", OU = Twitter Security, CN = *.twimg.com
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:/C=US/ST=California/L=San Francisco/O=Twitter, Inc./OU=Twitter Security/CN=*.twimg.com
+   i:/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA
+-----BEGIN CERTIFICATE-----
+MIIGqTCCBZGgAwIBAgIQC1neazvl3jf3hkSXsD3+2DANBgkqhkiG9w0BAQsFADBw
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMS8wLQYDVQQDEyZEaWdpQ2VydCBTSEEyIEhpZ2ggQXNz
+dXJhbmNlIFNlcnZlciBDQTAeFw0xNzEyMDIwMDAwMDBaFw0xODEyMDUxMjAwMDBa
+MIGDMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMN
+U2FuIEZyYW5jaXNjbzEWMBQGA1UEChMNVHdpdHRlciwgSW5jLjEZMBcGA1UECxMQ
+VHdpdHRlciBTZWN1cml0eTEUMBIGA1UEAwwLKi50d2ltZy5jb20wggEiMA0GCSqG
+SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDUERTTZvzjU3oSafpnB+1uAtFEmW+phCCW
+JFLBSR5UMMsM/UwXWq+Fki9I1pVTVjj/LIPCy7irlw1nvQvf4zumLCN4QjwtNDnY
+vqOpSaAjcK1DdSzIV/nVF8P5lu2xszMOt0BDEP4eL0d2FEdt2QvmJr7p/F//tog5
+G+HqSxhkE+bqpo6Wm0xR0bcH2ZcEECb5LUGzpFcbf4eV0NLRHHs81pQDuFFJZxqk
+6gpavV1DV9cSKZ9oL08DBv5T3Dv0Rwoc0nxeYpWVny+mStFVJCpT0+0fUxC5nMxF
+q1uzoG4COgfH+T7/s4N1ayPYjQyI3E9Zl53mrCEQSiThhHVz11YjAgMBAAGjggMp
+MIIDJTAfBgNVHSMEGDAWgBRRaP+QrwIHdTzM2WVkYqISuFlyOzAdBgNVHQ4EFgQU
+Z2B3GnxtaIwHkveC6C4ywF4kYKkwUgYDVR0RBEswSYILKi50d2ltZy5jb22CCXR3
+aW1nLmNvbYIUcGxhdGZvcm0udHdpdHRlci5jb22CGWNkbi5zeW5kaWNhdGlvbi50
+d2ltZy5jb20wDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggr
+BgEFBQcDAjB1BgNVHR8EbjBsMDSgMqAwhi5odHRwOi8vY3JsMy5kaWdpY2VydC5j
+b20vc2hhMi1oYS1zZXJ2ZXItZzYuY3JsMDSgMqAwhi5odHRwOi8vY3JsNC5kaWdp
+Y2VydC5jb20vc2hhMi1oYS1zZXJ2ZXItZzYuY3JsMEwGA1UdIARFMEMwNwYJYIZI
+AYb9bAEBMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNvbS9D
+UFMwCAYGZ4EMAQICMIGDBggrBgEFBQcBAQR3MHUwJAYIKwYBBQUHMAGGGGh0dHA6
+Ly9vY3NwLmRpZ2ljZXJ0LmNvbTBNBggrBgEFBQcwAoZBaHR0cDovL2NhY2VydHMu
+ZGlnaWNlcnQuY29tL0RpZ2lDZXJ0U0hBMkhpZ2hBc3N1cmFuY2VTZXJ2ZXJDQS5j
+cnQwDAYDVR0TAQH/BAIwADCCAQUGCisGAQQB1nkCBAIEgfYEgfMA8QB2ALvZ37wf
+inG1k5Qjl6qSe0c4V5UKq1LoGpCWZDaOHtGFAAABYBZTFTUAAAQDAEcwRQIhALVv
+qw9R2voauXoGaOu4cVgvWJroD9vzUs+dUlNk6fFZAiBD4iXgib5sYSMBvL2qqwtC
+EJIJZGOtwpmGEP7d3o7BpAB3AId1v+dZfPiMQ5lfvfNu/1aNR1Y2/0q1YMG06v9e
+oIMPAAABYBZTFXwAAAQDAEgwRgIhAMBezGMxdaZpICiUUVxhucBvLovyPdjn6TEi
+AxXsMfNoAiEA/34+Jv5VNaRMf2sXg+GR3UWaspgoeNAdckSl3nMLaFkwDQYJKoZI
+hvcNAQELBQADggEBAFbKCQBVaClTyYCr7TYuWaSeMWTBbx0S/4SKi+aJ5dqGbcLG
+4F2ArVs9qDU6KnuouEKhbdXAJxPTjp7tu9xBaWoqfsFI+484eTBjK4oVPKVNTpyi
+zaI5Dhh8ZWLxJE3hd7/tvh1IrCjvNJfE8d8+a9JX5OiEKTKd0yswcY4Fo8TURAfy
+V7juVTLTAmJi56DX3Y8z6YcV2qaZwfN1oXKiNtPQ3jByxXqjHRXsZdtaUxhMtsC0
+UaHdfLRNXey00dlR2LVpS4AvEJ89g120KP/L+vtsoV/oUYR61ES2RCmJg1IV0J2W
+YBy9Ka1WBCp4eiFa5fHG9JMtxKiP/O2RzcTEyaM=
+-----END CERTIFICATE-----
+ 1 s:/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA
+   i:/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert High Assurance EV Root CA
+-----BEGIN CERTIFICATE-----
+MIIEsTCCA5mgAwIBAgIQBOHnpNxc8vNtwCtCuF0VnzANBgkqhkiG9w0BAQsFADBs
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMSswKQYDVQQDEyJEaWdpQ2VydCBIaWdoIEFzc3VyYW5j
+ZSBFViBSb290IENBMB4XDTEzMTAyMjEyMDAwMFoXDTI4MTAyMjEyMDAwMFowcDEL
+MAkGA1UEBhMCVVMxFTATBgNVBAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3
+LmRpZ2ljZXJ0LmNvbTEvMC0GA1UEAxMmRGlnaUNlcnQgU0hBMiBIaWdoIEFzc3Vy
+YW5jZSBTZXJ2ZXIgQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC2
+4C/CJAbIbQRf1+8KZAayfSImZRauQkCbztyfn3YHPsMwVYcZuU+UDlqUH1VWtMIC
+Kq/QmO4LQNfE0DtyyBSe75CxEamu0si4QzrZCwvV1ZX1QK/IHe1NnF9Xt4ZQaJn1
+itrSxwUfqJfJ3KSxgoQtxq2lnMcZgqaFD15EWCo3j/018QsIJzJa9buLnqS9UdAn
+4t07QjOjBSjEuyjMmqwrIw14xnvmXnG3Sj4I+4G3FhahnSMSTeXXkgisdaScus0X
+sh5ENWV/UyU50RwKmmMbGZJ0aAo3wsJSSMs5WqK24V3B3aAguCGikyZvFEohQcft
+bZvySC/zA/WiaJJTL17jAgMBAAGjggFJMIIBRTASBgNVHRMBAf8ECDAGAQH/AgEA
+MA4GA1UdDwEB/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIw
+NAYIKwYBBQUHAQEEKDAmMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2Vy
+dC5jb20wSwYDVR0fBEQwQjBAoD6gPIY6aHR0cDovL2NybDQuZGlnaWNlcnQuY29t
+L0RpZ2lDZXJ0SGlnaEFzc3VyYW5jZUVWUm9vdENBLmNybDA9BgNVHSAENjA0MDIG
+BFUdIAAwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQ
+UzAdBgNVHQ4EFgQUUWj/kK8CB3U8zNllZGKiErhZcjswHwYDVR0jBBgwFoAUsT7D
+aQP4v0cB1JgmGggC72NkK8MwDQYJKoZIhvcNAQELBQADggEBABiKlYkD5m3fXPwd
+aOpKj4PWUS+Na0QWnqxj9dJubISZi6qBcYRb7TROsLd5kinMLYBq8I4g4Xmk/gNH
+E+r1hspZcX30BJZr01lYPf7TMSVcGDiEo+afgv2MW5gxTs14nhr9hctJqvIni5ly
+/D6q1UEL2tU2ob8cbkdJf17ZSHwD2f2LSaCYJkJA69aSEaRkCldUxPUd1gJea6zu
+xICaEnL6VpPX/78whQYwvwt/Tv9XBZ0k7YXDK/umdaisLRbvfXknsuvCnQsH6qqF
+0wGjIChBWUMo0oHjqvbsezt3tkBigAVBRQHvFwY+3sAzm2fTYS5yh+Rp/BIAV0Ae
+cPUeybQ=
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=/C=US/ST=California/L=San Francisco/O=Twitter, Inc./OU=Twitter Security/CN=*.twimg.com
+issuer=/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Server Temp Key: ECDH, P-256, 256 bits
+---
+SSL handshake has read 3595 bytes and written 402 bytes
+Verification: OK
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES128-GCM-SHA256
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES128-GCM-SHA256
+    Session-ID: FC37FEAB50615AC9BC73F0232DD4EC388B5CB397F8E7307D0FDE2752AEEC7BB6
+    Session-ID-ctx: 
+    Master-Key: F91A88190C2ABF31BCDF110913A56412BD77D597C2D444F722D72E04A83436583F35262092DA38CFC77DB3F67B47DCB3
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - da 9d 19 90 63 39 d7 96-d6 46 13 d1 8d 8c eb 5f   ....c9...F....._
+    0010 - 59 13 42 b0 b4 0a e0 04-c8 aa 55 1a 48 bb 91 0e   Y.B.......U.H...
+    0020 - 82 17 24 38 a8 75 a9 87-55 09 87 b6 5f 1b a6 aa   ..$8.u..U..._...
+    0030 - 55 fd 6f cf 10 73 99 1e-1b c5 f4 2b 0f 23 40 a1   U.o..s.....+.#@.
+    0040 - b8 fa 1f c1 cd 46 3f 7b-10 3c 54 00 5f 06 34 ad   .....F?{.<T._.4.
+    0050 - a8 08 21 5e 81 a0 af 0f-07 db f3 44 4f 5e 0f fd   ..!^.......DO^..
+    0060 - 9c 5c 67 0e ba 71 0f bc-ba 72 4d 72 7e 38 91 c0   .\g..q...rMr~8..
+    0070 - 74 e3 e0 be 2a 42 d4 90-1d d7 7c ea 03 fc e1 af   t...*B....|.....
+    0080 - 2e 6f 41 39 23 9b 52 16-7e 1a 2f 56 2c f1 78 3c   .oA9#.R.~./V,.x<
+    0090 - 9f 8a a3 4a ab 46 79 de-18 91 db 80 eb 79 3c 65   ...J.Fy......y<e
+    00a0 - 20 e2 e1 a5 0b 28 9f 44-4d 64 c1 bd 16 0f 84 35    ....(.DMd.....5
+
+    Start Time: 1539363498
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: yes
+---
+DONE
