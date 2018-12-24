@@ -1,0 +1,17 @@
+val bad_items  = [
+  [<abyssalcraft:tiningot>,    <forestry:ingot_tin>,                                  <mekanism:ingot:6>],
+  [<abyssalcraft:copperingot>, <forestry:ingot_copper>, <immersiveengineering:metal>, <mekanism:ingot:5>],
+  
+];
+val good_items = [
+  <embers:ingot_tin>,
+  <embers:ingot_copper>,
+];
+
+for idx, bad_list in bad_items {
+  val good = good_items[idx];
+
+  for bad in bad_list {
+    recipes.replaceAllOccurrences(bad, good);
+  }
+}
