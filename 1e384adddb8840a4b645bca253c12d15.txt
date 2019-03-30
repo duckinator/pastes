@@ -1,0 +1,48 @@
+bin/rspec
+installing gems for the tests to use...
+/usr/bin/ruby -S gem install 'rack:< 2.0' 'rack-test:~> 1.1' 'artifice:~> 0.6.0' 'compact_index:~> 0.11.0' 'sinatra:~> 1.4.7' 'rake:12.3.2' 'builder:~> 3.2' ruby-graphviz --no-document --conservative
+ERROR:  While executing gem ... (NameError)
+    uninitialized constant Gem::RDoc
+
+An error occurred while loading spec_helper.
+Failure/Error: system(cmd) || raise("Installing gems #{deps} for the tests to use failed!")
+
+RuntimeError:
+  Installing gems 'rack:< 2.0' 'rack-test:~> 1.1' 'artifice:~> 0.6.0' 'compact_index:~> 0.11.0' 'sinatra:~> 1.4.7' 'rake:12.3.2' 'builder:~> 3.2' ruby-graphviz for the tests to use failed!
+# ./spec/support/rubygems_ext.rb:57:in `install_gems'
+# ./spec/support/rubygems_ext.rb:39:in `setup'
+# ./spec/spec_helper.rb:25:in `<top (required)>'
+
+An error occurred while loading ./spec/bundler/gem_helper_spec.rb.
+Failure/Error: require "rake"
+
+LoadError:
+  cannot load such file -- rake
+# ./spec/bundler/gem_helper_spec.rb:3:in `<top (required)>'
+
+An error occurred while loading ./spec/bundler/gem_helper_spec.rb.
+Failure/Error: require "rake"
+
+LoadError:
+  cannot load such file -- rake
+# ./spec/bundler/gem_helper_spec.rb:3:in `<top (required)>'
+
+
+Retried examples: 0
+
+
+Finished in 0.00394 seconds (files took 0.87422 seconds to load)
+0 examples, 0 failures, 2 errors occurred outside of examples
+
+Finished in 0.00394 seconds (files took 0.87422 seconds to load)
+0 examples, 0 failures, 2 errors occurred outside of examples
+
+
+rake aborted!
+Command failed with status (1): [bin/rspec...]
+/home/pup/dev/ruby/bundler/bundler/Rakefile:32:in `block in <top (required)>'
+/home/pup/dev/ruby/bundler/bundler/Rakefile:23:in `block in invoke'
+/home/pup/dev/ruby/bundler/bundler/Rakefile:22:in `invoke'
+/home/pup/.gem/ruby/2.5.0/gems/rake-12.3.2/exe/rake:27:in `<top (required)>'
+Tasks: TOP => spec
+(See full trace by running task with --trace)
