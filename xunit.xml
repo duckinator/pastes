@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="0" hostname="cerberus.fox" name="pytest" skipped="0" tests="6" time="0.078" timestamp="2020-01-22T16:02:49.321656"><testcase classname="tests.test_config" name="test_json_resolution" time="0.001"></testcase><testcase classname="tests.test_config" name="test_defaults" time="0.001"></testcase><testcase classname="tests.test_integration" name="test_config_relative_path" time="0.012"><system-out>cwd: /tmp/tmpyn7k46sd
+emanate --source /tmp/tmpwz2h7glq/src
+&apos;/tmp/tmpwz2h7glq/src/foo&apos; -&gt; &apos;/tmp/tmpwz2h7glq/dest/foo&apos;
+cwd: /tmp/tmpetkvkfdw
+emanate --source src
+&apos;/tmp/tmpetkvkfdw/src/foo&apos; -&gt; &apos;/tmp/tmpetkvkfdw/dest/foo&apos;
+cwd: /tmp/tmpq7vws4le/src
+emanate
+&apos;/tmp/tmpq7vws4le/src/foo&apos; -&gt; &apos;/tmp/tmpq7vws4le/dest/foo&apos;
+</system-out></testcase><testcase classname="tests.test_integration" name="test_no_config" time="0.012"><system-out>cwd: /tmp/tmpuv0uzm7s
+emanate --source /tmp/tmp_uh8tzdz/src --dest /tmp/tmp_uh8tzdz/dest
+&apos;/tmp/tmp_uh8tzdz/src/foo&apos; -&gt; &apos;/tmp/tmp_uh8tzdz/dest/foo&apos;
+&apos;/tmp/tmp_uh8tzdz/src/bar/baz&apos; -&gt; &apos;/tmp/tmp_uh8tzdz/dest/bar/baz&apos;
+cwd: /tmp/tmpk99ai9r0
+emanate --source src --dest /tmp/tmpk99ai9r0/dest
+&apos;/tmp/tmpk99ai9r0/src/foo&apos; -&gt; &apos;/tmp/tmpk99ai9r0/dest/foo&apos;
+&apos;/tmp/tmpk99ai9r0/src/bar/baz&apos; -&gt; &apos;/tmp/tmpk99ai9r0/dest/bar/baz&apos;
+cwd: /tmp/tmprxyuze4g/src
+emanate --dest /tmp/tmprxyuze4g/dest
+&apos;/tmp/tmprxyuze4g/src/foo&apos; -&gt; &apos;/tmp/tmprxyuze4g/dest/foo&apos;
+&apos;/tmp/tmprxyuze4g/src/bar/baz&apos; -&gt; &apos;/tmp/tmprxyuze4g/dest/bar/baz&apos;
+</system-out></testcase><testcase classname="tests.test_integration" name="test_empty_config" time="0.011"><system-out>cwd: /tmp/tmp2gjl2wj_
+emanate --source /tmp/tmp1t7j_ote/src --dest /tmp/tmp1t7j_ote/dest
+&apos;/tmp/tmp1t7j_ote/src/foo&apos; -&gt; &apos;/tmp/tmp1t7j_ote/dest/foo&apos;
+cwd: /tmp/tmp9b40pw3b
+emanate --source src --dest /tmp/tmp9b40pw3b/dest
+&apos;/tmp/tmp9b40pw3b/src/foo&apos; -&gt; &apos;/tmp/tmp9b40pw3b/dest/foo&apos;
+cwd: /tmp/tmpfmnr88qv/src
+emanate --dest /tmp/tmpfmnr88qv/dest
+&apos;/tmp/tmpfmnr88qv/src/foo&apos; -&gt; &apos;/tmp/tmpfmnr88qv/dest/foo&apos;
+</system-out></testcase><testcase classname="tests.test_integration" name="test_clean" time="0.013"><system-out>cwd: /tmp/tmp9q8tpxi2
+emanate --source /tmp/tmpn4lvoqq7/src clean
+&apos;/tmp/tmpn4lvoqq7/dest/foo&apos;
+cwd: /tmp/tmp0dzkb_z5
+emanate --source src clean
+&apos;/tmp/tmp0dzkb_z5/dest/foo&apos;
+cwd: /tmp/tmpsueno4qa/src
+emanate clean
+&apos;/tmp/tmpsueno4qa/dest/foo&apos;
+</system-out></testcase></testsuite></testsuites>
