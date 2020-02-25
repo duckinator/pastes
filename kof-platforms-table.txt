@@ -1,0 +1,17 @@
+Fetching page list... Done.
+Game     | Neo Geo | Neo Geo CD | Switch | PS2 | PS3 | PS4 | Saturn | Dreamcast | Xbox | Xbox 360 | Xbox One | Windows
+======================================================================================================================
+KoF '94  | Y       | Y          | N      | Y   | N   | N   | N      | N         | N    | N        | N        | N      
+KoF '95  | Y       | Y          | Y      | N   | N   | Y   | Y      | N         | N    | N        | Y        | N      
+KoF '96  | Y       | Y          | Y      | N   | N   | Y   | Y      | N         | N    | N        | Y        | N      
+KoF '97  | Y       | Y          | Y      | N   | N   | Y   | Y      | N         | N    | N        | Y        | Y      
+KoF '98  | Y       | Y          | Y      | Y   | N   | N   | N      | Y         | N    | N        | N        | Y      
+KoF '99  | Y       | Y          | Y      | N   | N   | N   | N      | Y         | N    | N        | N        | Y      
+KoF 2000 | Y       | N          | Y      | Y   | N   | Y   | N      | Y         | N    | N        | Y        | Y      
+KoF 2001 | Y       | N          | Y      | Y   | N   | Y   | N      | Y         | N    | N        | Y        | Y      
+KoF 2002 | Y       | N          | Y      | Y   | N   | Y   | N      | Y         | Y    | N        | Y        | Y      
+KoF 2003 | Y       | N          | N      | Y   | Y   | N   | N      | N         | Y    | N        | N        | N      
+KoF XI   | N       | N          | N      | Y   | N   | N   | N      | N         | N    | N        | N        | N      
+KoF XII  | N       | N          | N      | N   | Y   | N   | N      | N         | N    | Y        | N        | N      
+KoF XIII | N       | N          | N      | N   | Y   | N   | N      | N         | N    | Y        | N        | Y      
+KoF XIV  | N       | N          | N      | N   | N   | Y   | N      | N         | N    | N        | N        | Y      
