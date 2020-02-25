@@ -1,0 +1,131 @@
+Fetching page list... Done.
+Found pages:
+ 1. The King of Fighters '94
+    a. Arcade
+    b. Neo Geo AES
+    c. Neo Geo CD
+    d. PlayStation 2
+ 2. The King of Fighters '95
+    a. Arcade
+    b. Game Boy
+    c. Neo Geo AES
+    d. Neo Geo CD
+    e. Nintendo Switch
+    f. PlayStation 1
+    g. PlayStation 4
+    h. PlayStation Network
+    i. Sega Saturn
+    j. Virtual Console
+    k. Xbox One
+ 3. The King of Fighters '96
+    a. Arcade
+    b. Game Boy
+    c. Neo Geo AES
+    d. Neo Geo CD
+    e. Nintendo Switch
+    f. PlayStation 1
+    g. PlayStation 4
+    h. PlayStation Network
+    i. Sega Saturn
+    j. Virtual Console
+    k. Xbox One
+ 4. The King of Fighters '97
+    a. Android
+    b. Arcade
+    c. Neo Geo AES
+    d. Neo Geo CD
+    e. Nintendo Switch
+    f. PlayStation 1
+    g. PlayStation 4
+    h. PlayStation Network
+    i. Sega Saturn
+    j. Virtual Console
+    k. Windows
+    l. Xbox One
+    m. iOS
+ 5. The King of Fighters '98
+    a. Android
+    b. Arcade
+    c. Dreamcast
+    d. Neo Geo AES
+    e. Neo Geo CD
+    f. Nintendo Switch
+    g. PlayStation 1
+    h. PlayStation 2
+    i. PlayStation Network
+    j. Virtual Console
+    k. Windows
+    l. Xbox Live Arcade
+    m. iOS
+ 6. The King of Fighters '99
+    a. Arcade
+    b. Dreamcast
+    c. Neo Geo AES
+    d. Neo Geo CD
+    e. Nintendo Switch
+    f. Nintendo eShop
+    g. PlayStation 1
+    h. PlayStation Network
+    i. Virtual Console
+    j. Wii
+    k. Windows
+ 7. The King of Fighters 2000
+    a. Arcade
+    b. Dreamcast
+    c. Linux
+    d. MacOS
+    e. Neo Geo AES
+    f. Nintendo Switch
+    g. PlayStation 2
+    h. PlayStation 4
+    i. Windows
+    j. Windows 10
+    k. Xbox One
+ 8. The King of Fighters 2001
+    a. Arcade
+    b. Dreamcast
+    c. Neo Geo AES
+    d. Nintendo Switch
+    e. PlayStation 2
+    f. PlayStation 4
+    g. PlayStation Network
+    h. Windows
+    i. Xbox One
+ 9. The King of Fighters 2002
+    a. Arcade
+    b. Dreamcast
+    c. Linux
+    d. Macintosh
+    e. Neo Geo AES
+    f. Nintendo Switch
+    g. PlayStation 2
+    h. PlayStation 4
+    i. PlayStation Network
+    j. Windows
+    k. Xbox
+    l. Xbox One
+10. The King of Fighters 2003
+    a. Arcade
+    b. Neo Geo AES
+    c. PlayStation 2
+    d. PlayStation 3
+    e. Xbox
+11. The King of Fighters XI
+    a. Arcade
+    b. PlayStation 2
+    c. PlayStation Network
+12. The King of Fighters XII
+    a. Arcade
+    b. PlayStation 3
+    c. Xbox 360
+13. The King of Fighters XIII
+    a. Android
+    b. Arcade
+    c. PlayStation 3
+    d. Windows
+    e. Xbox 360
+    f. iOS
+14. The King of Fighters XIV
+    a. Arcade
+    b. PlayStation 4
+    c. Windows
