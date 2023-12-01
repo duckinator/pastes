@@ -1,0 +1,66 @@
+From 16810327360d4c93393c867d0831121a4718fa76 Mon Sep 17 00:00:00 2001
+From: Ellen Marie Dash <me@duckie.co>
+Date: Thu, 30 Nov 2023 20:20:38 -0500
+Subject: [PATCH] Make --build-root disable auto-user-install.
+
+---
+ lib/rubygems/installer.rb           | 18 ++++++++++--------
+ test/rubygems/test_gem_installer.rb | 13 +++++++++++++
+ 2 files changed, 23 insertions(+), 8 deletions(-)
+
+diff --git a/lib/rubygems/installer.rb b/lib/rubygems/installer.rb
+index 18170230df..1ea12c44ae 100644
+--- a/lib/rubygems/installer.rb
++++ b/lib/rubygems/installer.rb
+@@ -675,14 +675,16 @@ def process_options # :nodoc:
+ 
+     @build_args = options[:build_args]
+ 
+-    @gem_home = @install_dir
+-    @gem_home ||= if options[:user_install]
+-      Gem.user_dir
+-    elsif !ENV.key?("GEM_HOME") && (File.exist?(Gem.dir) && !File.writable?(Gem.dir))
+-      say "Defaulting to user installation because default installation directory (#{Gem.dir}) is not writable."
+-      Gem.user_dir
+-    else
+-      Gem.dir
++    @gem_home = @install_dir || Gem.dir
++
++    # `--build-root` overrides `--user-install` and auto-user-install
++    if @build_root.nil?
++      if !options[:install_dir] && options[:user_install]
++        @gem_home = Gem.user_dir
++      elsif !ENV.key?("GEM_HOME") && (File.exist?(Gem.dir) && !File.writable?(Gem.dir))
++        say "Defaulting to user installation because default installation directory (#{Gem.dir}) is not writable."
++        @gem_home = Gem.user_dir
++      end
+     end
+ 
+     # If the user has asked for the gem to be installed in a directory that is
+diff --git a/test/rubygems/test_gem_installer.rb b/test/rubygems/test_gem_installer.rb
+index a00814370f..1240400696 100644
+--- a/test/rubygems/test_gem_installer.rb
++++ b/test/rubygems/test_gem_installer.rb
+@@ -1285,6 +1285,19 @@ def test_install_build_root
+     assert_equal @spec, installer.install
+   end
+ 
++  def test_install_build_root_unwritable_gem_dir
++    build_root = File.join(@tempdir, "build_root")
++
++    @gem = setup_base_gem
++    installer = Gem::Installer.at @gem,
++      :install_dir => "/fake-gem-dir",
++      :build_root => build_root
++
++    assert_equal @spec, installer.install
++
++    assert_true File.exist?(File.join(build_root, "fake-gem-dir"))
++  end
++
+   def test_install_missing_dirs
+     installer = setup_base_installer
+ 
+-- 
+2.42.0
+
